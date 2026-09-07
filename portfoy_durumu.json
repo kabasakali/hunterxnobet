@@ -1,0 +1,29 @@
+{
+  "son_guncelleme": "2026-09-04 09:46:22",
+  "baslangic_sermayesi_tl": 46494.2,
+  "toplam_portfoy_tl": 45512.71,
+  "zirve_portfoy_tl": 46494.2,
+  "mevcut_cekilme_pct": 2.11,
+  "kill_switch_aktif": false,
+  "kill_switch_nedeni": null,
+  "eldeki_fonlar": {
+    "SOS": {
+      "fon_kodu": "SOS",
+      "fon_adi": "Hedef Portföy Sağlık Sektörü Değişken Fon",
+      "pay_adedi": 22943.0,
+      "maliyet_fiyati": 1.7214488,
+      "son_nav": 1.687391,
+      "guncel_deger_tl": 38713.81
+    },
+    "MTD": {
+      "fon_kodu": "MTD",
+      "fon_adi": "Mükafat Portföy Birinci Serbest Fon",
+      "pay_adedi": 5095.0,
+      "maliyet_fiyati": 1.3737,
+      "son_nav": 1.334425,
+      "guncel_deger_tl": 6798.9
+    }
+  },
+  "serbest_nakit_tl": 0.0,
+  "takasta_bekleyen_islemler": []
+}

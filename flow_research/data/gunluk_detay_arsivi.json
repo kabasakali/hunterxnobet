@@ -1,0 +1,2928 @@
+{
+  "SOS": {
+    "2026-08-28": {
+      "fonKodu": "SOS",
+      "fonUnvan": "HEDEF PORTFÖY SAĞLIK SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.713326,
+      "gunlukGetiri": -0.7628,
+      "payAdet": 20274911,
+      "portBuyukluk": 34737525.53,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 40,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 475,
+      "pazarPayi": 0.03
+    },
+    "2026-08-27": {
+      "fonKodu": "SOS",
+      "fonUnvan": "HEDEF PORTFÖY SAĞLIK SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.726496,
+      "gunlukGetiri": -0.5147,
+      "payAdet": 17983328,
+      "portBuyukluk": 31048145.39,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 36,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 436,
+      "pazarPayi": 0.03
+    }
+  },
+  "MTD": {
+    "2026-08-28": {
+      "fonKodu": "MTD",
+      "fonUnvan": "BV PORTFÖY MALZEME TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 1.373718,
+      "gunlukGetiri": -1.0123,
+      "payAdet": 111897603,
+      "portBuyukluk": 153715799.7,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 155,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1516,
+      "pazarPayi": 0.14
+    },
+    "2026-08-27": {
+      "fonKodu": "MTD",
+      "fonUnvan": "BV PORTFÖY MALZEME TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 1.352224,
+      "gunlukGetiri": 0.0,
+      "payAdet": 111755147,
+      "portBuyukluk": 151117969.26,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 154,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1519,
+      "pazarPayi": 0.14
+    }
+  },
+  "ACD": {
+    "2026-08-28": {
+      "fonKodu": "ACD",
+      "fonUnvan": "İSTANBUL PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 6.171752,
+      "gunlukGetiri": 0.2626,
+      "payAdet": 57155575,
+      "portBuyukluk": 352750059.84,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 104,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1476,
+      "pazarPayi": 0.31
+    },
+    "2026-08-27": {
+      "fonKodu": "ACD",
+      "fonUnvan": "İSTANBUL PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 6.155587,
+      "gunlukGetiri": 0.0,
+      "payAdet": 57155575,
+      "portBuyukluk": 351826138.88,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 101,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1476,
+      "pazarPayi": 0.34
+    }
+  },
+  "ADE": {
+    "2026-08-28": {
+      "fonKodu": "ADE",
+      "fonUnvan": "AK PORTFÖY MUTLAK GETİRİ HEDEFLİ DEĞİŞKEN FON",
+      "sonFiyat": 0.899322,
+      "gunlukGetiri": 0.6105,
+      "payAdet": 785510127,
+      "portBuyukluk": 706426798.91,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 119,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 25700,
+      "pazarPayi": 0.63
+    },
+    "2026-08-27": {
+      "fonKodu": "ADE",
+      "fonUnvan": "AK PORTFÖY MUTLAK GETİRİ HEDEFLİ DEĞİŞKEN FON",
+      "sonFiyat": 0.893865,
+      "gunlukGetiri": 0.0,
+      "payAdet": 785510127,
+      "portBuyukluk": 702139973.89,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 116,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 25700,
+      "pazarPayi": 0.68
+    }
+  },
+  "AED": {
+    "2026-08-28": {
+      "fonKodu": "AED",
+      "fonUnvan": "ATA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 118.780975,
+      "gunlukGetiri": 0.2929,
+      "payAdet": 567885,
+      "portBuyukluk": 67453944.7,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 74,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1389,
+      "pazarPayi": 0.06
+    },
+    "2026-08-27": {
+      "fonKodu": "AED",
+      "fonUnvan": "ATA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 118.434082,
+      "gunlukGetiri": 0.0,
+      "payAdet": 567885,
+      "portBuyukluk": 67256938.42,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 72,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1389,
+      "pazarPayi": 0.06
+    }
+  },
+  "AGC": {
+    "2026-08-28": {
+      "fonKodu": "AGC",
+      "fonUnvan": "AK PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 9.433913,
+      "gunlukGetiri": 0.0627,
+      "payAdet": 11067462,
+      "portBuyukluk": 104409476.52,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 118,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2466,
+      "pazarPayi": 0.09
+    },
+    "2026-08-27": {
+      "fonKodu": "AGC",
+      "fonUnvan": "AK PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 9.428002,
+      "gunlukGetiri": 0.0,
+      "payAdet": 11067462,
+      "portBuyukluk": 104344049.92,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 115,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2466,
+      "pazarPayi": 0.1
+    }
+  },
+  "AN1": {
+    "2026-08-28": {
+      "fonKodu": "AN1",
+      "fonUnvan": "STRATEJİ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 113.547984,
+      "gunlukGetiri": -0.3222,
+      "payAdet": 12060584,
+      "portBuyukluk": 1369455033.07,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 88,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2897,
+      "pazarPayi": 1.21
+    },
+    "2026-08-27": {
+      "fonKodu": "AN1",
+      "fonUnvan": "STRATEJİ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 113.915018,
+      "gunlukGetiri": 0.0,
+      "payAdet": 12060584,
+      "portBuyukluk": 1373881645.73,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 86,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2897,
+      "pazarPayi": 1.31
+    }
+  },
+  "ATJ": {
+    "2026-08-28": {
+      "fonKodu": "ATJ",
+      "fonUnvan": "AZİMUT PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 23.219009,
+      "gunlukGetiri": 0.1237,
+      "payAdet": 45294433,
+      "portBuyukluk": 1051691859.36,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 102,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9,
+      "pazarPayi": 0.93
+    },
+    "2026-08-27": {
+      "fonKodu": "ATJ",
+      "fonUnvan": "AZİMUT PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 23.190323,
+      "gunlukGetiri": 0.0,
+      "payAdet": 45294433,
+      "portBuyukluk": 1050392511.94,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 99,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9,
+      "pazarPayi": 1.01
+    }
+  },
+  "BCK": {
+    "2026-08-28": {
+      "fonKodu": "BCK",
+      "fonUnvan": "DENİZ PORTFÖY BLOCKCHAİN VE FINTECH TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.10053,
+      "gunlukGetiri": 0.948,
+      "payAdet": 54144893,
+      "portBuyukluk": 113732967.23,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 34,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2281,
+      "pazarPayi": 0.1
+    },
+    "2026-08-27": {
+      "fonKodu": "BCK",
+      "fonUnvan": "DENİZ PORTFÖY BLOCKCHAİN VE FINTECH TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.080805,
+      "gunlukGetiri": 0.0,
+      "payAdet": 54144893,
+      "portBuyukluk": 112664949.94,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 33,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2281,
+      "pazarPayi": 0.11
+    }
+  },
+  "BHF": {
+    "2026-08-28": {
+      "fonKodu": "BHF",
+      "fonUnvan": "PARDUS PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 3.134497,
+      "gunlukGetiri": -0.704,
+      "payAdet": 62228477,
+      "portBuyukluk": 195054995.89,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 48,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1498,
+      "pazarPayi": 0.17
+    },
+    "2026-08-27": {
+      "fonKodu": "BHF",
+      "fonUnvan": "PARDUS PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 3.15672,
+      "gunlukGetiri": 0.0,
+      "payAdet": 62228477,
+      "portBuyukluk": 196437897.27,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 46,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1498,
+      "pazarPayi": 0.19
+    }
+  },
+  "BTE": {
+    "2026-08-28": {
+      "fonKodu": "BTE",
+      "fonUnvan": "BV PORTFÖY OYUN VE TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 5.228549,
+      "gunlukGetiri": 0.0351,
+      "payAdet": 43397961,
+      "portBuyukluk": 226908345.67,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 41,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1015,
+      "pazarPayi": 0.2
+    },
+    "2026-08-27": {
+      "fonKodu": "BTE",
+      "fonUnvan": "BV PORTFÖY OYUN VE TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 5.226714,
+      "gunlukGetiri": 0.0,
+      "payAdet": 43397961,
+      "portBuyukluk": 226828748.7,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 39,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1015,
+      "pazarPayi": 0.22
+    }
+  },
+  "BVD": {
+    "2026-08-28": {
+      "fonKodu": "BVD",
+      "fonUnvan": "BV PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.428012,
+      "gunlukGetiri": 0.4192,
+      "payAdet": 169235853,
+      "portBuyukluk": 241670911.4,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 370,
+      "pazarPayi": 0.21
+    },
+    "2026-08-27": {
+      "fonKodu": "BVD",
+      "fonUnvan": "BV PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.422051,
+      "gunlukGetiri": 0.0,
+      "payAdet": 169235853,
+      "portBuyukluk": 240661973.92,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 370,
+      "pazarPayi": 0.23
+    }
+  },
+  "DBP": {
+    "2026-08-28": {
+      "fonKodu": "DBP",
+      "fonUnvan": "DENİZ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.507209,
+      "gunlukGetiri": 0.1607,
+      "payAdet": 329682000,
+      "portBuyukluk": 167217821.07,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 83,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1058,
+      "pazarPayi": 0.15
+    },
+    "2026-08-27": {
+      "fonKodu": "DBP",
+      "fonUnvan": "DENİZ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.505114,
+      "gunlukGetiri": 0.0,
+      "payAdet": 329443300,
+      "portBuyukluk": 166406433.19,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 84,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1059,
+      "pazarPayi": 0.15
+    }
+  },
+  "DTZ": {
+    "2026-08-28": {
+      "fonKodu": "DTZ",
+      "fonUnvan": "AK PORTFÖY ROBOTİK TEKNOLOJİLER DEĞİŞKEN FON",
+      "sonFiyat": 5.443999,
+      "gunlukGetiri": 2.2098,
+      "payAdet": 93601326,
+      "portBuyukluk": 509565553.51,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 59,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 8418,
+      "pazarPayi": 0.45
+    },
+    "2026-08-27": {
+      "fonKodu": "DTZ",
+      "fonUnvan": "AK PORTFÖY ROBOTİK TEKNOLOJİLER DEĞİŞKEN FON",
+      "sonFiyat": 5.326298,
+      "gunlukGetiri": 0.0,
+      "payAdet": 93601326,
+      "portBuyukluk": 498548598.22,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 57,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 8418,
+      "pazarPayi": 0.49
+    }
+  },
+  "DVT": {
+    "2026-08-28": {
+      "fonKodu": "DVT",
+      "fonUnvan": "DENİZ PORTFÖY METAVERSE VE DİJİTAL YAŞAM TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 10.024784,
+      "gunlukGetiri": 1.0765,
+      "payAdet": 89123484,
+      "portBuyukluk": 893443715.24,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 12,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 11088,
+      "pazarPayi": 0.86
+    },
+    "2026-08-27": {
+      "fonKodu": "DVT",
+      "fonUnvan": "DENİZ PORTFÖY METAVERSE VE DİJİTAL YAŞAM TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 9.918017,
+      "gunlukGetiri": 0.0,
+      "payAdet": 89123484,
+      "portBuyukluk": 883928189.47,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 12,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 11088,
+      "pazarPayi": 0.86
+    }
+  },
+  "DYN": {
+    "2026-08-28": {
+      "fonKodu": "DYN",
+      "fonUnvan": "DENİZ PORTFÖY ELEKTRİKLİ VE OTONOM ARAÇ TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 4.499427,
+      "gunlukGetiri": -0.0047,
+      "payAdet": 12978965,
+      "portBuyukluk": 58397906.36,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 90,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1629,
+      "pazarPayi": 0.06
+    },
+    "2026-08-27": {
+      "fonKodu": "DYN",
+      "fonUnvan": "DENİZ PORTFÖY ELEKTRİKLİ VE OTONOM ARAÇ TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 4.499638,
+      "gunlukGetiri": 0.0,
+      "payAdet": 12978965,
+      "portBuyukluk": 58400650.38,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 90,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1629,
+      "pazarPayi": 0.06
+    }
+  },
+  "EBD": {
+    "2026-08-28": {
+      "fonKodu": "EBD",
+      "fonUnvan": "GLOBAL MD PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.259815,
+      "gunlukGetiri": 0.3058,
+      "payAdet": 300982639,
+      "portBuyukluk": 78199932.01,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 15,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 581,
+      "pazarPayi": 0.07
+    },
+    "2026-08-27": {
+      "fonKodu": "EBD",
+      "fonUnvan": "GLOBAL MD PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.259023,
+      "gunlukGetiri": 0.0,
+      "payAdet": 300982639,
+      "portBuyukluk": 77961398.4,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 15,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 581,
+      "pazarPayi": 0.07
+    }
+  },
+  "ECA": {
+    "2026-08-28": {
+      "fonKodu": "ECA",
+      "fonUnvan": "GLOBAL MD PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.073522,
+      "gunlukGetiri": 0.2221,
+      "payAdet": 160811451,
+      "portBuyukluk": 333446068.5,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 8,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 723,
+      "pazarPayi": 0.32
+    },
+    "2026-08-27": {
+      "fonKodu": "ECA",
+      "fonUnvan": "GLOBAL MD PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.068927,
+      "gunlukGetiri": 0.0,
+      "payAdet": 160811451,
+      "portBuyukluk": 332707138.94,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 8,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 723,
+      "pazarPayi": 0.32
+    }
+  },
+  "EDN": {
+    "2026-08-28": {
+      "fonKodu": "EDN",
+      "fonUnvan": "EMAA BLUE PORTFÖY DENGELİ DEĞİŞKEN FON",
+      "sonFiyat": 1.045365,
+      "gunlukGetiri": 0.097,
+      "payAdet": 268475933,
+      "portBuyukluk": 280655462.66,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 36,
+      "pazarPayi": 0.27
+    },
+    "2026-08-27": {
+      "fonKodu": "EDN",
+      "fonUnvan": "EMAA BLUE PORTFÖY DENGELİ DEĞİŞKEN FON",
+      "sonFiyat": 1.044352,
+      "gunlukGetiri": 0.0,
+      "payAdet": 268475933,
+      "portBuyukluk": 280383371.83,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 36,
+      "pazarPayi": 0.27
+    }
+  },
+  "EDU": {
+    "2026-08-28": {
+      "fonKodu": "EDU",
+      "fonUnvan": "İŞ PORTFÖY TEV EĞİTİME DESTEK DEĞİŞKEN FON",
+      "sonFiyat": 3.631522,
+      "gunlukGetiri": 0.1575,
+      "payAdet": 101276585,
+      "portBuyukluk": 367788115.59,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 66,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 684,
+      "pazarPayi": 0.35
+    },
+    "2026-08-27": {
+      "fonKodu": "EDU",
+      "fonUnvan": "İŞ PORTFÖY TEV EĞİTİME DESTEK DEĞİŞKEN FON",
+      "sonFiyat": 3.625811,
+      "gunlukGetiri": 0.0,
+      "payAdet": 101276585,
+      "portBuyukluk": 367209791.09,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 66,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 684,
+      "pazarPayi": 0.35
+    }
+  },
+  "EGR": {
+    "2026-08-28": {
+      "fonKodu": "EGR",
+      "fonUnvan": "EMAA BLUE PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 1.053294,
+      "gunlukGetiri": 0.0012,
+      "payAdet": 262065104,
+      "portBuyukluk": 276031557.02,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 124,
+      "pazarPayi": 0.26
+    },
+    "2026-08-27": {
+      "fonKodu": "EGR",
+      "fonUnvan": "EMAA BLUE PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 1.053281,
+      "gunlukGetiri": 0.0,
+      "payAdet": 262065104,
+      "portBuyukluk": 276028289.31,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 124,
+      "pazarPayi": 0.26
+    }
+  },
+  "EIB": {
+    "2026-08-28": {
+      "fonKodu": "EIB",
+      "fonUnvan": "ASTRA PORTFÖY DEĞİŞKEN FON",
+      "sonFiyat": 0.689594,
+      "gunlukGetiri": 0.318,
+      "payAdet": 445562015,
+      "portBuyukluk": 307256687.56,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 42,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 502,
+      "pazarPayi": 0.29
+    },
+    "2026-08-27": {
+      "fonKodu": "EIB",
+      "fonUnvan": "ASTRA PORTFÖY DEĞİŞKEN FON",
+      "sonFiyat": 0.687408,
+      "gunlukGetiri": 0.0,
+      "payAdet": 445562015,
+      "portBuyukluk": 306282912.51,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 42,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 502,
+      "pazarPayi": 0.29
+    }
+  },
+  "EML": {
+    "2026-08-28": {
+      "fonKodu": "EML",
+      "fonUnvan": "AK PORTFÖY EMLAK SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.268998,
+      "gunlukGetiri": -0.4229,
+      "payAdet": 34407659,
+      "portBuyukluk": 43663251.63,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 967,
+      "pazarPayi": 0.04
+    },
+    "2026-08-27": {
+      "fonKodu": "EML",
+      "fonUnvan": "AK PORTFÖY EMLAK SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.274387,
+      "gunlukGetiri": 0.0,
+      "payAdet": 34407659,
+      "portBuyukluk": 43848686.55,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 967,
+      "pazarPayi": 0.04
+    }
+  },
+  "EVM": {
+    "2026-08-28": {
+      "fonKodu": "EVM",
+      "fonUnvan": "DENİZ PORTFÖY ENERJİ VE MADENCİLİK SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.17922,
+      "gunlukGetiri": 1.0941,
+      "payAdet": 36882028,
+      "portBuyukluk": 43492030.08,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 592,
+      "pazarPayi": 0.04
+    },
+    "2026-08-27": {
+      "fonKodu": "EVM",
+      "fonUnvan": "DENİZ PORTFÖY ENERJİ VE MADENCİLİK SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.166458,
+      "gunlukGetiri": 0.0,
+      "payAdet": 36882028,
+      "portBuyukluk": 43021328.7,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 592,
+      "pazarPayi": 0.04
+    }
+  },
+  "GZZ": {
+    "2026-08-28": {
+      "fonKodu": "GZZ",
+      "fonUnvan": "GARANTİ PORTFÖY FİNANSAL TEKNOLOJİLER DEĞİŞKEN FON",
+      "sonFiyat": 7.188219,
+      "gunlukGetiri": 0.2937,
+      "payAdet": 9293350,
+      "portBuyukluk": 66802630.69,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 129,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1237,
+      "pazarPayi": 0.06
+    },
+    "2026-08-27": {
+      "fonKodu": "GZZ",
+      "fonUnvan": "GARANTİ PORTFÖY FİNANSAL TEKNOLOJİLER DEĞİŞKEN FON",
+      "sonFiyat": 7.167169,
+      "gunlukGetiri": 0.0,
+      "payAdet": 9293350,
+      "portBuyukluk": 66607010.25,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 129,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1237,
+      "pazarPayi": 0.06
+    }
+  },
+  "HDD": {
+    "2026-08-28": {
+      "fonKodu": "HDD",
+      "fonUnvan": "AHLATCI PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.089442,
+      "gunlukGetiri": 0.4095,
+      "payAdet": 10342304,
+      "portBuyukluk": 11267337.3,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 152,
+      "pazarPayi": 0.01
+    },
+    "2026-08-27": {
+      "fonKodu": "HDD",
+      "fonUnvan": "AHLATCI PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.084999,
+      "gunlukGetiri": 0.0,
+      "payAdet": 10342304,
+      "portBuyukluk": 11221388.77,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 152,
+      "pazarPayi": 0.01
+    }
+  },
+  "HIZ": {
+    "2026-08-28": {
+      "fonKodu": "HIZ",
+      "fonUnvan": "AZİMUT PORTFÖY DİNAMİK DEĞİŞKEN FON",
+      "sonFiyat": 2.079478,
+      "gunlukGetiri": 0.3216,
+      "payAdet": 101085214,
+      "portBuyukluk": 210204485.44,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 26,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1058,
+      "pazarPayi": 0.19
+    },
+    "2026-08-27": {
+      "fonKodu": "HIZ",
+      "fonUnvan": "AZİMUT PORTFÖY DİNAMİK DEĞİŞKEN FON",
+      "sonFiyat": 2.072812,
+      "gunlukGetiri": 0.0,
+      "payAdet": 101085214,
+      "portBuyukluk": 209530628.14,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 25,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1058,
+      "pazarPayi": 0.2
+    }
+  },
+  "HJB": {
+    "2026-08-28": {
+      "fonKodu": "HJB",
+      "fonUnvan": "HEDEF PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 4.775216,
+      "gunlukGetiri": 0.9372,
+      "payAdet": 23025331,
+      "portBuyukluk": 109950939.73,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 29,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1545,
+      "pazarPayi": 0.11
+    },
+    "2026-08-27": {
+      "fonKodu": "HJB",
+      "fonUnvan": "HEDEF PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 4.730878,
+      "gunlukGetiri": 0.0,
+      "payAdet": 23025331,
+      "portBuyukluk": 108930036.69,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 29,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1545,
+      "pazarPayi": 0.11
+    }
+  },
+  "HKG": {
+    "2026-08-28": {
+      "fonKodu": "HKG",
+      "fonUnvan": "ZİRAAT PORTFÖY HALK'IN ÜRETEN KADINLARI DEĞİŞKEN FON",
+      "sonFiyat": 1.568126,
+      "gunlukGetiri": 0.409,
+      "payAdet": 24199129,
+      "portBuyukluk": 37947277.1,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 91,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1050,
+      "pazarPayi": 0.04
+    },
+    "2026-08-27": {
+      "fonKodu": "HKG",
+      "fonUnvan": "ZİRAAT PORTFÖY HALK'IN ÜRETEN KADINLARI DEĞİŞKEN FON",
+      "sonFiyat": 1.561738,
+      "gunlukGetiri": 0.0,
+      "payAdet": 24199129,
+      "portBuyukluk": 37792711.17,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 91,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1050,
+      "pazarPayi": 0.04
+    }
+  },
+  "HOA": {
+    "2026-08-28": {
+      "fonKodu": "HOA",
+      "fonUnvan": "HSBC PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 0.246347,
+      "gunlukGetiri": 1.8489,
+      "payAdet": 8418527838,
+      "portBuyukluk": 2073877579.7,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 48,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3335,
+      "pazarPayi": 1.99
+    },
+    "2026-08-27": {
+      "fonKodu": "HOA",
+      "fonUnvan": "HSBC PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 0.241875,
+      "gunlukGetiri": 0.0,
+      "payAdet": 8418527838,
+      "portBuyukluk": 2036231198.68,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 48,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3335,
+      "pazarPayi": 1.99
+    }
+  },
+  "HPD": {
+    "2026-08-28": {
+      "fonKodu": "HPD",
+      "fonUnvan": "HSBC PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.216935,
+      "gunlukGetiri": 0.5301,
+      "payAdet": 1331013861,
+      "portBuyukluk": 288743593.67,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 133,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1458,
+      "pazarPayi": 0.28
+    },
+    "2026-08-27": {
+      "fonKodu": "HPD",
+      "fonUnvan": "HSBC PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.215791,
+      "gunlukGetiri": 0.0,
+      "payAdet": 1331013861,
+      "portBuyukluk": 287220933.77,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 133,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1458,
+      "pazarPayi": 0.28
+    }
+  },
+  "HPO": {
+    "2026-08-28": {
+      "fonKodu": "HPO",
+      "fonUnvan": "HSBC PORTFÖY ÇOKLU VARLIK BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.171627,
+      "gunlukGetiri": 0.1371,
+      "payAdet": 6579734781,
+      "portBuyukluk": 1129258037.49,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 68,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2874,
+      "pazarPayi": 1.08
+    },
+    "2026-08-27": {
+      "fonKodu": "HPO",
+      "fonUnvan": "HSBC PORTFÖY ÇOKLU VARLIK BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.171392,
+      "gunlukGetiri": 0.0,
+      "payAdet": 6579734781,
+      "portBuyukluk": 1127714045.3,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 68,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2874,
+      "pazarPayi": 1.08
+    }
+  },
+  "HSA": {
+    "2026-08-28": {
+      "fonKodu": "HSA",
+      "fonUnvan": "HSBC PORTFÖY DEĞİŞKEN (TL) FON",
+      "sonFiyat": 1651.540303,
+      "gunlukGetiri": 0.2107,
+      "payAdet": 2484571,
+      "portBuyukluk": 4103369143.3,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 130,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2384,
+      "pazarPayi": 3.62
+    },
+    "2026-08-27": {
+      "fonKodu": "HSA",
+      "fonUnvan": "HSBC PORTFÖY DEĞİŞKEN (TL) FON",
+      "sonFiyat": 1648.067824,
+      "gunlukGetiri": 0.0,
+      "payAdet": 2484571,
+      "portBuyukluk": 4094741521.78,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 130,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2384,
+      "pazarPayi": 3.62
+    }
+  },
+  "HTJ": {
+    "2026-08-28": {
+      "fonKodu": "HTJ",
+      "fonUnvan": "HEDEF PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 1.964817,
+      "gunlukGetiri": -0.0556,
+      "payAdet": 19800873,
+      "portBuyukluk": 38905087.42,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 57,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 231,
+      "pazarPayi": 0.03
+    },
+    "2026-08-27": {
+      "fonKodu": "HTJ",
+      "fonUnvan": "HEDEF PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 1.96591,
+      "gunlukGetiri": 0.0,
+      "payAdet": 19800873,
+      "portBuyukluk": 38926735.15,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 57,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 231,
+      "pazarPayi": 0.03
+    }
+  },
+  "HVU": {
+    "2026-08-28": {
+      "fonKodu": "HVU",
+      "fonUnvan": "ALLBATROSS PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 5.722205,
+      "gunlukGetiri": 1.0185,
+      "payAdet": 3035477,
+      "portBuyukluk": 17369620.02,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 112,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 796,
+      "pazarPayi": 0.02
+    },
+    "2026-08-27": {
+      "fonKodu": "HVU",
+      "fonUnvan": "ALLBATROSS PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 5.664512,
+      "gunlukGetiri": 0.0,
+      "payAdet": 3035477,
+      "portBuyukluk": 17194495.73,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 112,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 796,
+      "pazarPayi": 0.02
+    }
+  },
+  "KRF": {
+    "2026-08-28": {
+      "fonKodu": "KRF",
+      "fonUnvan": "KARE PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 21.622521,
+      "gunlukGetiri": 0.0559,
+      "payAdet": 2065683,
+      "portBuyukluk": 44665274.83,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 84,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 597,
+      "pazarPayi": 0.04
+    },
+    "2026-08-27": {
+      "fonKodu": "KRF",
+      "fonUnvan": "KARE PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 21.610441,
+      "gunlukGetiri": 0.0,
+      "payAdet": 2065683,
+      "portBuyukluk": 44640320.11,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 82,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 597,
+      "pazarPayi": 0.04
+    }
+  },
+  "KUB": {
+    "2026-08-28": {
+      "fonKodu": "KUB",
+      "fonUnvan": "KARE PORTFÖY DEĞİŞKEN  (DÖVİZ) FONU",
+      "sonFiyat": 0.75779,
+      "gunlukGetiri": 0.2329,
+      "payAdet": 808642881,
+      "portBuyukluk": 612781825.86,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 127,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3637,
+      "pazarPayi": 0.59
+    },
+    "2026-08-27": {
+      "fonKodu": "KUB",
+      "fonUnvan": "KARE PORTFÖY DEĞİŞKEN  (DÖVİZ) FONU",
+      "sonFiyat": 0.756029,
+      "gunlukGetiri": 0.0,
+      "payAdet": 808642881,
+      "portBuyukluk": 611357636.86,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 127,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3637,
+      "pazarPayi": 0.59
+    }
+  },
+  "MAD": {
+    "2026-08-28": {
+      "fonKodu": "MAD",
+      "fonUnvan": "MEKSA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.046403,
+      "gunlukGetiri": 1.0097,
+      "payAdet": 22142843,
+      "portBuyukluk": 23170346.51,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 138,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 367,
+      "pazarPayi": 0.02
+    },
+    "2026-08-27": {
+      "fonKodu": "MAD",
+      "fonUnvan": "MEKSA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.035943,
+      "gunlukGetiri": 0.0,
+      "payAdet": 22142843,
+      "portBuyukluk": 22938725.04,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 138,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 367,
+      "pazarPayi": 0.02
+    }
+  },
+  "MBL": {
+    "2026-08-28": {
+      "fonKodu": "MBL",
+      "fonUnvan": "MEKSA PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.28928,
+      "gunlukGetiri": 0.0955,
+      "payAdet": 72832233,
+      "portBuyukluk": 21068900.52,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 51,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 212,
+      "pazarPayi": 0.02
+    },
+    "2026-08-27": {
+      "fonKodu": "MBL",
+      "fonUnvan": "MEKSA PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.289004,
+      "gunlukGetiri": 0.0,
+      "payAdet": 72832233,
+      "portBuyukluk": 21048806.75,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 51,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 212,
+      "pazarPayi": 0.02
+    }
+  },
+  "MD1": {
+    "2026-08-28": {
+      "fonKodu": "MD1",
+      "fonUnvan": "MT PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.312517,
+      "gunlukGetiri": 0.11,
+      "payAdet": 98708318,
+      "portBuyukluk": 228264711.46,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 8,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 660,
+      "pazarPayi": 0.2
+    },
+    "2026-08-27": {
+      "fonKodu": "MD1",
+      "fonUnvan": "MT PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.309976,
+      "gunlukGetiri": 0.0,
+      "payAdet": 98708318,
+      "portBuyukluk": 228013848.18,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 8,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 660,
+      "pazarPayi": 0.2
+    }
+  },
+  "MD2": {
+    "2026-08-28": {
+      "fonKodu": "MD2",
+      "fonUnvan": "MT PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.208099,
+      "gunlukGetiri": -0.014,
+      "payAdet": 129131245,
+      "portBuyukluk": 285134614.17,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 10,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 778,
+      "pazarPayi": 0.25
+    },
+    "2026-08-27": {
+      "fonKodu": "MD2",
+      "fonUnvan": "MT PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.208408,
+      "gunlukGetiri": 0.0,
+      "payAdet": 129131245,
+      "portBuyukluk": 285174497.38,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 10,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 778,
+      "pazarPayi": 0.25
+    }
+  },
+  "MET": {
+    "2026-08-28": {
+      "fonKodu": "MET",
+      "fonUnvan": "GARANTİ PORTFÖY METAVERSE VE YENİ TEKNOLOJİLER DEĞİŞKEN FON",
+      "sonFiyat": 6.027796,
+      "gunlukGetiri": 0.4452,
+      "payAdet": 124528352,
+      "portBuyukluk": 750631463.82,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 60,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 6631,
+      "pazarPayi": 0.66
+    },
+    "2026-08-27": {
+      "fonKodu": "MET",
+      "fonUnvan": "GARANTİ PORTFÖY METAVERSE VE YENİ TEKNOLOJİLER DEĞİŞKEN FON",
+      "sonFiyat": 6.001079,
+      "gunlukGetiri": 0.0,
+      "payAdet": 124528352,
+      "portBuyukluk": 747304502.43,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 60,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 6631,
+      "pazarPayi": 0.66
+    }
+  },
+  "MTV": {
+    "2026-08-28": {
+      "fonKodu": "MTV",
+      "fonUnvan": "AK PORTFÖY METAVERSE VE DİJİTAL YAŞAM TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 5.468953,
+      "gunlukGetiri": -0.1798,
+      "payAdet": 26959239,
+      "portBuyukluk": 147438811.59,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 98,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 12823,
+      "pazarPayi": 0.13
+    },
+    "2026-08-27": {
+      "fonKodu": "MTV",
+      "fonUnvan": "AK PORTFÖY METAVERSE VE DİJİTAL YAŞAM TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 5.478804,
+      "gunlukGetiri": 0.0,
+      "payAdet": 26959239,
+      "portBuyukluk": 147704383.49,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 98,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 12823,
+      "pazarPayi": 0.13
+    }
+  },
+  "MTX": {
+    "2026-08-28": {
+      "fonKodu": "MTX",
+      "fonUnvan": "TEB PORTFÖY ÜÇÜNCÜ DEĞİŞKEN FON",
+      "sonFiyat": 5.264234,
+      "gunlukGetiri": -0.2208,
+      "payAdet": 15623491,
+      "portBuyukluk": 82245707.4,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 115,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2095,
+      "pazarPayi": 0.07
+    },
+    "2026-08-27": {
+      "fonKodu": "MTX",
+      "fonUnvan": "TEB PORTFÖY ÜÇÜNCÜ DEĞİŞKEN FON",
+      "sonFiyat": 5.275883,
+      "gunlukGetiri": 0.0,
+      "payAdet": 15623491,
+      "portBuyukluk": 82427712.91,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 115,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2095,
+      "pazarPayi": 0.07
+    }
+  },
+  "NKP": {
+    "2026-08-28": {
+      "fonKodu": "NKP",
+      "fonUnvan": "NEO PORTFÖY KAR PAYI ÖDEYEN DEĞİŞKEN FON",
+      "sonFiyat": 1.149106,
+      "gunlukGetiri": 0.933,
+      "payAdet": 160210669,
+      "portBuyukluk": 184099117.65,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 139,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3247,
+      "pazarPayi": 0.16
+    },
+    "2026-08-27": {
+      "fonKodu": "NKP",
+      "fonUnvan": "NEO PORTFÖY KAR PAYI ÖDEYEN DEĞİŞKEN FON",
+      "sonFiyat": 1.13547,
+      "gunlukGetiri": 0.0,
+      "payAdet": 160060451,
+      "portBuyukluk": 181743914.15,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 140,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3258,
+      "pazarPayi": 0.16
+    }
+  },
+  "PBR": {
+    "2026-08-28": {
+      "fonKodu": "PBR",
+      "fonUnvan": "PUSULA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 5.002714,
+      "gunlukGetiri": -2.2601,
+      "payAdet": 1222063250,
+      "portBuyukluk": 6113633419.28,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 1,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 36622,
+      "pazarPayi": 5.85
+    },
+    "2026-08-27": {
+      "fonKodu": "PBR",
+      "fonUnvan": "PUSULA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 5.118395,
+      "gunlukGetiri": 0.0,
+      "payAdet": 1222063250,
+      "portBuyukluk": 6255002235.18,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 1,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 36622,
+      "pazarPayi": 5.85
+    }
+  },
+  "PGD": {
+    "2026-08-28": {
+      "fonKodu": "PGD",
+      "fonUnvan": "ASTRA PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 1.807817,
+      "gunlukGetiri": 0.2171,
+      "payAdet": 102530843,
+      "portBuyukluk": 185357021.8,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 70,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 158,
+      "pazarPayi": 0.18
+    },
+    "2026-08-27": {
+      "fonKodu": "PGD",
+      "fonUnvan": "ASTRA PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 1.803901,
+      "gunlukGetiri": 0.0,
+      "payAdet": 102530843,
+      "portBuyukluk": 184955462.69,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 70,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 158,
+      "pazarPayi": 0.18
+    }
+  },
+  "PID": {
+    "2026-08-28": {
+      "fonKodu": "PID",
+      "fonUnvan": "PİRAMİT PORTFÖY DEĞİŞKEN FON",
+      "sonFiyat": 1.902539,
+      "gunlukGetiri": 0.1361,
+      "payAdet": 29243925,
+      "portBuyukluk": 55637703.93,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 53,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 117,
+      "pazarPayi": 0.05
+    },
+    "2026-08-27": {
+      "fonKodu": "PID",
+      "fonUnvan": "PİRAMİT PORTFÖY DEĞİŞKEN FON",
+      "sonFiyat": 1.899953,
+      "gunlukGetiri": 0.0,
+      "payAdet": 29243925,
+      "portBuyukluk": 55562087.82,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 53,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 117,
+      "pazarPayi": 0.05
+    }
+  },
+  "PPZ": {
+    "2026-08-28": {
+      "fonKodu": "PPZ",
+      "fonUnvan": "AZİMUT PORTFÖY PARA PİYASASI (TL) FONU",
+      "sonFiyat": 6.637901,
+      "gunlukGetiri": 0.1135,
+      "payAdet": 1943365424,
+      "portBuyukluk": 12899867787.35,
+      "fonKategori": "Para Piyasası Fonu",
+      "kategoriDerece": 31,
+      "kategoriFonSay": 84,
+      "yatirimciSayi": 8261,
+      "pazarPayi": 0.66
+    },
+    "2026-08-27": {
+      "fonKodu": "PPZ",
+      "fonUnvan": "AZİMUT PORTFÖY PARA PİYASASI (TL) FONU",
+      "sonFiyat": 6.630376,
+      "gunlukGetiri": 0.0,
+      "payAdet": 1943365424,
+      "portBuyukluk": 12885242541.05,
+      "fonKategori": "Para Piyasası Fonu",
+      "kategoriDerece": 31,
+      "kategoriFonSay": 84,
+      "yatirimciSayi": 8261,
+      "pazarPayi": 0.66
+    }
+  },
+  "RD1": {
+    "2026-08-28": {
+      "fonKodu": "RD1",
+      "fonUnvan": "ROTA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.953949,
+      "gunlukGetiri": 1.1658,
+      "payAdet": 34479618,
+      "portBuyukluk": 67371401.3,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 97,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 153,
+      "pazarPayi": 0.06
+    },
+    "2026-08-27": {
+      "fonKodu": "RD1",
+      "fonUnvan": "ROTA PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.931432,
+      "gunlukGetiri": 0.0,
+      "payAdet": 34479618,
+      "portBuyukluk": 66595050.02,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 97,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 153,
+      "pazarPayi": 0.06
+    }
+  },
+  "RGD": {
+    "2026-08-28": {
+      "fonKodu": "RGD",
+      "fonUnvan": "RE-PIE PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 1.156976,
+      "gunlukGetiri": -0.4837,
+      "payAdet": 24918637,
+      "portBuyukluk": 28830274.15,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 131,
+      "pazarPayi": 0.03
+    },
+    "2026-08-27": {
+      "fonKodu": "RGD",
+      "fonUnvan": "RE-PIE PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 1.162599,
+      "gunlukGetiri": 0.0,
+      "payAdet": 24918637,
+      "portBuyukluk": 28970394.76,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 131,
+      "pazarPayi": 0.03
+    }
+  },
+  "RIK": {
+    "2026-08-28": {
+      "fonKodu": "RIK",
+      "fonUnvan": "RE-PIE PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 5.576286,
+      "gunlukGetiri": 0.0559,
+      "payAdet": 107612058,
+      "portBuyukluk": 600075599.68,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 87,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3847,
+      "pazarPayi": 0.57
+    },
+    "2026-08-27": {
+      "fonKodu": "RIK",
+      "fonUnvan": "RE-PIE PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 5.573171,
+      "gunlukGetiri": 0.0,
+      "payAdet": 107612058,
+      "portBuyukluk": 599740357.6,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 87,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3847,
+      "pazarPayi": 0.57
+    }
+  },
+  "RKC": {
+    "2026-08-28": {
+      "fonKodu": "RKC",
+      "fonUnvan": "ROTA PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.777271,
+      "gunlukGetiri": 0.1537,
+      "payAdet": 17189549,
+      "portBuyukluk": 30550481.51,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 13,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 264,
+      "pazarPayi": 0.03
+    },
+    "2026-08-27": {
+      "fonKodu": "RKC",
+      "fonUnvan": "ROTA PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.774544,
+      "gunlukGetiri": 0.0,
+      "payAdet": 17189549,
+      "portBuyukluk": 30503602.9,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 13,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 264,
+      "pazarPayi": 0.03
+    }
+  },
+  "RPC": {
+    "2026-08-28": {
+      "fonKodu": "RPC",
+      "fonUnvan": "ROTA PORTFÖY İKLİM DEĞİŞİKLİĞİ ÇÖZÜMLERİ DEĞİŞKEN FON",
+      "sonFiyat": 5.331787,
+      "gunlukGetiri": 0.1803,
+      "payAdet": 4597459,
+      "portBuyukluk": 24512669.93,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 27,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 550,
+      "pazarPayi": 0.02
+    },
+    "2026-08-27": {
+      "fonKodu": "RPC",
+      "fonUnvan": "ROTA PORTFÖY İKLİM DEĞİŞİKLİĞİ ÇÖZÜMLERİ DEĞİŞKEN FON",
+      "sonFiyat": 5.322191,
+      "gunlukGetiri": 0.0,
+      "payAdet": 4597459,
+      "portBuyukluk": 24468555.32,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 27,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 550,
+      "pazarPayi": 0.02
+    }
+  },
+  "RPD": {
+    "2026-08-28": {
+      "fonKodu": "RPD",
+      "fonUnvan": "RE-PIE PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 14.805579,
+      "gunlukGetiri": -0.4999,
+      "payAdet": 18234495,
+      "portBuyukluk": 269972259.73,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 83,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1850,
+      "pazarPayi": 0.26
+    },
+    "2026-08-27": {
+      "fonKodu": "RPD",
+      "fonUnvan": "RE-PIE PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 14.879964,
+      "gunlukGetiri": 0.0,
+      "payAdet": 18234495,
+      "portBuyukluk": 271328628.06,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 83,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1850,
+      "pazarPayi": 0.26
+    }
+  },
+  "RPM": {
+    "2026-08-28": {
+      "fonKodu": "RPM",
+      "fonUnvan": "ROTA PORTFÖY İLAÇ VE MEDİKAL TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 4.651511,
+      "gunlukGetiri": 0.006,
+      "payAdet": 21424004,
+      "portBuyukluk": 99653996.39,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 11,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2954,
+      "pazarPayi": 0.09
+    },
+    "2026-08-27": {
+      "fonKodu": "RPM",
+      "fonUnvan": "ROTA PORTFÖY İLAÇ VE MEDİKAL TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 4.651232,
+      "gunlukGetiri": 0.0,
+      "payAdet": 21424004,
+      "portBuyukluk": 99648011.39,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 11,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2954,
+      "pazarPayi": 0.09
+    }
+  },
+  "TI4": {
+    "2026-08-28": {
+      "fonKodu": "TI4",
+      "fonUnvan": "İŞ PORTFÖY TEMKİNLİ DEĞİŞKEN FON",
+      "sonFiyat": 0.06532,
+      "gunlukGetiri": 0.0981,
+      "payAdet": 29524602327,
+      "portBuyukluk": 1928534851.9,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 82,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 13930,
+      "pazarPayi": 1.71
+    },
+    "2026-08-27": {
+      "fonKodu": "TI4",
+      "fonUnvan": "İŞ PORTFÖY TEMKİNLİ DEĞİŞKEN FON",
+      "sonFiyat": 0.065256,
+      "gunlukGetiri": 0.0,
+      "payAdet": 29524602327,
+      "portBuyukluk": 1926656973.51,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 80,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 13930,
+      "pazarPayi": 1.85
+    }
+  },
+  "TI7": {
+    "2026-08-28": {
+      "fonKodu": "TI7",
+      "fonUnvan": "İŞ PORTFÖY DENGELİ DEĞİŞKEN FON",
+      "sonFiyat": 79.078009,
+      "gunlukGetiri": 0.159,
+      "payAdet": 14931653,
+      "portBuyukluk": 1180765394.49,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 103,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9669,
+      "pazarPayi": 1.13
+    },
+    "2026-08-27": {
+      "fonKodu": "TI7",
+      "fonUnvan": "İŞ PORTFÖY DENGELİ DEĞİŞKEN FON",
+      "sonFiyat": 78.952475,
+      "gunlukGetiri": 0.0,
+      "payAdet": 14931653,
+      "portBuyukluk": 1178890953.7,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 103,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9669,
+      "pazarPayi": 1.13
+    }
+  },
+  "TMC": {
+    "2026-08-28": {
+      "fonKodu": "TMC",
+      "fonUnvan": "İŞ PORTFÖY TEMA DEĞİŞKEN FON",
+      "sonFiyat": 0.164358,
+      "gunlukGetiri": 0.367,
+      "payAdet": 949759002,
+      "portBuyukluk": 156100829.42,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 109,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 11613,
+      "pazarPayi": 0.15
+    },
+    "2026-08-27": {
+      "fonKodu": "TMC",
+      "fonUnvan": "İŞ PORTFÖY TEMA DEĞİŞKEN FON",
+      "sonFiyat": 0.163757,
+      "gunlukGetiri": 0.0,
+      "payAdet": 949759002,
+      "portBuyukluk": 155529696.07,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 109,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 11613,
+      "pazarPayi": 0.15
+    }
+  },
+  "TND": {
+    "2026-08-28": {
+      "fonKodu": "TND",
+      "fonUnvan": "İŞ PORTFÖY TTF TENİSE DESTEK DEĞİŞKEN FON",
+      "sonFiyat": 1.513805,
+      "gunlukGetiri": 0.1067,
+      "payAdet": 127641231,
+      "portBuyukluk": 193223935.25,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 49,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 489,
+      "pazarPayi": 0.19
+    },
+    "2026-08-27": {
+      "fonKodu": "TND",
+      "fonUnvan": "İŞ PORTFÖY TTF TENİSE DESTEK DEĞİŞKEN FON",
+      "sonFiyat": 1.512191,
+      "gunlukGetiri": 0.0,
+      "payAdet": 127641231,
+      "portBuyukluk": 193017983.51,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 49,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 489,
+      "pazarPayi": 0.19
+    }
+  },
+  "TPV": {
+    "2026-08-28": {
+      "fonKodu": "TPV",
+      "fonUnvan": "AURA PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 10.623824,
+      "gunlukGetiri": 0.1659,
+      "payAdet": 761089,
+      "portBuyukluk": 8085675.42,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 138,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 43,
+      "pazarPayi": 0.01
+    },
+    "2026-08-27": {
+      "fonKodu": "TPV",
+      "fonUnvan": "AURA PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 10.606228,
+      "gunlukGetiri": 0.0,
+      "payAdet": 761089,
+      "portBuyukluk": 8072283.67,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 138,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 43,
+      "pazarPayi": 0.01
+    }
+  },
+  "URA": {
+    "2026-08-28": {
+      "fonKodu": "URA",
+      "fonUnvan": "ATA PORTFÖY ENERJİ DEĞİŞKEN FON",
+      "sonFiyat": 2.030032,
+      "gunlukGetiri": 0.2438,
+      "payAdet": 351197598,
+      "portBuyukluk": 712942329.97,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 26,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9265,
+      "pazarPayi": 0.68
+    },
+    "2026-08-27": {
+      "fonKodu": "URA",
+      "fonUnvan": "ATA PORTFÖY ENERJİ DEĞİŞKEN FON",
+      "sonFiyat": 2.025095,
+      "gunlukGetiri": 0.0,
+      "payAdet": 351197598,
+      "portBuyukluk": 711208436.1,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 26,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9265,
+      "pazarPayi": 0.68
+    }
+  },
+  "VCY": {
+    "2026-08-28": {
+      "fonKodu": "VCY",
+      "fonUnvan": "AK PORTFÖY ELEKTRİKLİ VE OTONOM ARAÇ TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 3.510124,
+      "gunlukGetiri": 0.546,
+      "payAdet": 47180222,
+      "portBuyukluk": 165608450.14,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 61,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 12123,
+      "pazarPayi": 0.16
+    },
+    "2026-08-27": {
+      "fonKodu": "VCY",
+      "fonUnvan": "AK PORTFÖY ELEKTRİKLİ VE OTONOM ARAÇ TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 3.491063,
+      "gunlukGetiri": 0.0,
+      "payAdet": 47180222,
+      "portBuyukluk": 164709117.78,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 61,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 12123,
+      "pazarPayi": 0.16
+    }
+  },
+  "YDP": {
+    "2026-08-28": {
+      "fonKodu": "YDP",
+      "fonUnvan": "YAPI KREDİ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.339157,
+      "gunlukGetiri": 0.5955,
+      "payAdet": 169540125,
+      "portBuyukluk": 396580946.66,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 40,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2497,
+      "pazarPayi": 0.38
+    },
+    "2026-08-27": {
+      "fonKodu": "YDP",
+      "fonUnvan": "YAPI KREDİ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 2.32531,
+      "gunlukGetiri": 0.0,
+      "payAdet": 169540125,
+      "portBuyukluk": 394233310.81,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 40,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2497,
+      "pazarPayi": 0.38
+    }
+  },
+  "YIT": {
+    "2026-08-28": {
+      "fonKodu": "YIT",
+      "fonUnvan": "GARANTİ PORTFÖY YARI İLETKEN TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.693931,
+      "gunlukGetiri": 1.6013,
+      "payAdet": 867263322,
+      "portBuyukluk": 2336347132.07,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 3,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 16722,
+      "pazarPayi": 2.24
+    },
+    "2026-08-27": {
+      "fonKodu": "YIT",
+      "fonUnvan": "GARANTİ PORTFÖY YARI İLETKEN TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.651473,
+      "gunlukGetiri": 0.0,
+      "payAdet": 867263322,
+      "portBuyukluk": 2299525250.46,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 3,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 16722,
+      "pazarPayi": 2.24
+    }
+  },
+  "YJH": {
+    "2026-08-28": {
+      "fonKodu": "YJH",
+      "fonUnvan": "YAPI KREDİ PORTFÖY TEMİZ ENERJİ DEĞİŞKEN FONU",
+      "sonFiyat": 3.86629,
+      "gunlukGetiri": 0.7574,
+      "payAdet": 50281890,
+      "portBuyukluk": 194404355.98,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 71,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 4082,
+      "pazarPayi": 0.19
+    },
+    "2026-08-27": {
+      "fonKodu": "YJH",
+      "fonUnvan": "YAPI KREDİ PORTFÖY TEMİZ ENERJİ DEĞİŞKEN FONU",
+      "sonFiyat": 3.837227,
+      "gunlukGetiri": 0.0,
+      "payAdet": 50281890,
+      "portBuyukluk": 192943018.07,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 71,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 4082,
+      "pazarPayi": 0.19
+    }
+  },
+  "YLC": {
+    "2026-08-28": {
+      "fonKodu": "YLC",
+      "fonUnvan": "ATA PORTFÖY TARIM VE GIDA DEĞİŞKEN FON",
+      "sonFiyat": 3.946857,
+      "gunlukGetiri": -0.6129,
+      "payAdet": 18891300,
+      "portBuyukluk": 74561260.42,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 96,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1342,
+      "pazarPayi": 0.07
+    },
+    "2026-08-27": {
+      "fonKodu": "YLC",
+      "fonUnvan": "ATA PORTFÖY TARIM VE GIDA DEĞİŞKEN FON",
+      "sonFiyat": 3.971196,
+      "gunlukGetiri": 0.0,
+      "payAdet": 18891300,
+      "portBuyukluk": 75021063.74,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 96,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1342,
+      "pazarPayi": 0.07
+    }
+  },
+  "BVV": {
+    "2026-08-28": {
+      "fonKodu": "BVV",
+      "fonUnvan": "BV PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 3.568813,
+      "gunlukGetiri": 1.9608,
+      "payAdet": 54715507,
+      "portBuyukluk": 195269405.27,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 5,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1096,
+      "pazarPayi": 0.17
+    },
+    "2026-08-27": {
+      "fonKodu": "BVV",
+      "fonUnvan": "BV PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 3.500181,
+      "gunlukGetiri": 0.0,
+      "payAdet": 54715507,
+      "portBuyukluk": 191514202.21,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 5,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1096,
+      "pazarPayi": 0.19
+    }
+  },
+  "ETN": {
+    "2026-08-28": {
+      "fonKodu": "ETN",
+      "fonUnvan": "EMAA BLUE PORTFÖY TEMKİNLİ DEĞİŞKEN FON",
+      "sonFiyat": 1.008164,
+      "gunlukGetiri": 0.0974,
+      "payAdet": 200004827,
+      "portBuyukluk": 201637676.73,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 8,
+      "pazarPayi": 0.19
+    },
+    "2026-08-27": {
+      "fonKodu": "ETN",
+      "fonUnvan": "EMAA BLUE PORTFÖY TEMKİNLİ DEĞİŞKEN FON",
+      "sonFiyat": 1.007183,
+      "gunlukGetiri": 0.0,
+      "payAdet": 200004827,
+      "portBuyukluk": 201441462.42,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 8,
+      "pazarPayi": 0.19
+    }
+  },
+  "GPU": {
+    "2026-08-28": {
+      "fonKodu": "GPU",
+      "fonUnvan": "GARANTİ PORTFÖY ÜÇÜNCÜ DEĞİŞKEN FON",
+      "sonFiyat": 21.533774,
+      "gunlukGetiri": 0.3351,
+      "payAdet": 16720901,
+      "portBuyukluk": 360064104.82,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 69,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2458,
+      "pazarPayi": 0.32
+    },
+    "2026-08-27": {
+      "fonKodu": "GPU",
+      "fonUnvan": "GARANTİ PORTFÖY ÜÇÜNCÜ DEĞİŞKEN FON",
+      "sonFiyat": 21.461855,
+      "gunlukGetiri": 0.0,
+      "payAdet": 16720901,
+      "portBuyukluk": 358861558.13,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 67,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2458,
+      "pazarPayi": 0.34
+    }
+  },
+  "GZG": {
+    "2026-08-28": {
+      "fonKodu": "GZG",
+      "fonUnvan": "GARANTİ PORTFÖY SAĞLIK VE GENETİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 7.664767,
+      "gunlukGetiri": -0.5381,
+      "payAdet": 65188676,
+      "portBuyukluk": 499656018.39,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 21,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 4509,
+      "pazarPayi": 0.44
+    },
+    "2026-08-27": {
+      "fonKodu": "GZG",
+      "fonUnvan": "GARANTİ PORTFÖY SAĞLIK VE GENETİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 7.706234,
+      "gunlukGetiri": 0.0,
+      "payAdet": 65188676,
+      "portBuyukluk": 502359207.47,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 21,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 4509,
+      "pazarPayi": 0.48
+    }
+  },
+  "GZY": {
+    "2026-08-28": {
+      "fonKodu": "GZY",
+      "fonUnvan": "GARANTİ PORTFÖY TURİZM VE SEYAHAT SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 7.868621,
+      "gunlukGetiri": -1.532,
+      "payAdet": 8894956,
+      "portBuyukluk": 69991035.79,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 136,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2319,
+      "pazarPayi": 0.06
+    },
+    "2026-08-27": {
+      "fonKodu": "GZY",
+      "fonUnvan": "GARANTİ PORTFÖY TURİZM VE SEYAHAT SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 0,
+      "gunlukGetiri": 0.0,
+      "payAdet": 0,
+      "portBuyukluk": 0,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 155,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2319,
+      "pazarPayi": 0
+    }
+  },
+  "IJZ": {
+    "2026-08-28": {
+      "fonKodu": "IJZ",
+      "fonUnvan": "İŞ PORTFÖY SİBER GÜVENLİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 14.917283,
+      "gunlukGetiri": 4.6152,
+      "payAdet": 64047880,
+      "portBuyukluk": 955420379.92,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 19,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 15747,
+      "pazarPayi": 0.85
+    },
+    "2026-08-27": {
+      "fonKodu": "IJZ",
+      "fonUnvan": "İŞ PORTFÖY SİBER GÜVENLİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 14.259193,
+      "gunlukGetiri": 0.0,
+      "payAdet": 64047880,
+      "portBuyukluk": 913271065.3,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 19,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 15747,
+      "pazarPayi": 0.91
+    }
+  },
+  "IPB": {
+    "2026-08-28": {
+      "fonKodu": "IPB",
+      "fonUnvan": "İSTANBUL PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.906299,
+      "gunlukGetiri": -0.7284,
+      "payAdet": 1200259524,
+      "portBuyukluk": 1087793458.8,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 87,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 15079,
+      "pazarPayi": 0.97
+    },
+    "2026-08-27": {
+      "fonKodu": "IPB",
+      "fonUnvan": "İSTANBUL PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.912949,
+      "gunlukGetiri": 0.0,
+      "payAdet": 1200259524,
+      "portBuyukluk": 1095775636.07,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 85,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 15079,
+      "pazarPayi": 1.04
+    }
+  },
+  "IRT": {
+    "2026-08-28": {
+      "fonKodu": "IRT",
+      "fonUnvan": "INVEO PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 8.014964,
+      "gunlukGetiri": 1.1865,
+      "payAdet": 16141714,
+      "portBuyukluk": 129375256.49,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 7,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1533,
+      "pazarPayi": 0.11
+    },
+    "2026-08-27": {
+      "fonKodu": "IRT",
+      "fonUnvan": "INVEO PORTFÖY TEKNOLOJİ DEĞİŞKEN FON",
+      "sonFiyat": 7.920982,
+      "gunlukGetiri": 0.0,
+      "payAdet": 16141714,
+      "portBuyukluk": 127858218.84,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 7,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1533,
+      "pazarPayi": 0.12
+    }
+  },
+  "IVY": {
+    "2026-08-28": {
+      "fonKodu": "IVY",
+      "fonUnvan": "İSTANBUL PORTFÖY BLOCKCHAIN TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 6.223789,
+      "gunlukGetiri": 1.2075,
+      "payAdet": 124067555,
+      "portBuyukluk": 772170275.51,
+      "fonKategori": "Karma Fon",
+      "kategoriDerece": 65,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 13099,
+      "pazarPayi": 0.69
+    },
+    "2026-08-27": {
+      "fonKodu": "IVY",
+      "fonUnvan": "İSTANBUL PORTFÖY BLOCKCHAIN TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 6.149533,
+      "gunlukGetiri": 0.0,
+      "payAdet": 124067555,
+      "portBuyukluk": 762957571.39,
+      "fonKategori": "Karma Fon",
+      "kategoriDerece": 63,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 13099,
+      "pazarPayi": 0.74
+    }
+  },
+  "IYB": {
+    "2026-08-28": {
+      "fonKodu": "IYB",
+      "fonUnvan": "AURA PORTFÖY DEĞİŞKEN FONU",
+      "sonFiyat": 5.991256,
+      "gunlukGetiri": -0.175,
+      "payAdet": 15734273,
+      "portBuyukluk": 94268060.8,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 67,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 317,
+      "pazarPayi": 0.08
+    },
+    "2026-08-27": {
+      "fonKodu": "IYB",
+      "fonUnvan": "AURA PORTFÖY DEĞİŞKEN FONU",
+      "sonFiyat": 6.001759,
+      "gunlukGetiri": 0.0,
+      "payAdet": 15734273,
+      "portBuyukluk": 94433315.82,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 65,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 317,
+      "pazarPayi": 0.09
+    }
+  },
+  "JET": {
+    "2026-08-28": {
+      "fonKodu": "JET",
+      "fonUnvan": "ATA PORTFÖY HAVACILIK VE SAVUNMA TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.395854,
+      "gunlukGetiri": 0.2762,
+      "payAdet": 228436368,
+      "portBuyukluk": 547300146.71,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 107,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 17097,
+      "pazarPayi": 0.49
+    },
+    "2026-08-27": {
+      "fonKodu": "JET",
+      "fonUnvan": "ATA PORTFÖY HAVACILIK VE SAVUNMA TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.389255,
+      "gunlukGetiri": 0.0,
+      "payAdet": 228436368,
+      "portBuyukluk": 545792706.56,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 104,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 17097,
+      "pazarPayi": 0.52
+    }
+  },
+  "KIA": {
+    "2026-08-28": {
+      "fonKodu": "KIA",
+      "fonUnvan": "TRIVE PORTFÖY MUTLAK GETİRİ HEDEFLİ DEĞİŞKEN FON",
+      "sonFiyat": 4.357838,
+      "gunlukGetiri": -0.5511,
+      "payAdet": 1357805,
+      "portBuyukluk": 5917094.13,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 125,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 357,
+      "pazarPayi": 0.01
+    },
+    "2026-08-27": {
+      "fonKodu": "KIA",
+      "fonUnvan": "TRIVE PORTFÖY MUTLAK GETİRİ HEDEFLİ DEĞİŞKEN FON",
+      "sonFiyat": 4.381987,
+      "gunlukGetiri": 0.0,
+      "payAdet": 1357805,
+      "portBuyukluk": 5949884.04,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 122,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 357,
+      "pazarPayi": 0.01
+    }
+  },
+  "KIB": {
+    "2026-08-28": {
+      "fonKodu": "KIB",
+      "fonUnvan": "TRIVE PORTFÖY ROBOTİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 4.396479,
+      "gunlukGetiri": 1.1159,
+      "payAdet": 2600423,
+      "portBuyukluk": 11432705.53,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 113,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1067,
+      "pazarPayi": 0.01
+    },
+    "2026-08-27": {
+      "fonKodu": "KIB",
+      "fonUnvan": "TRIVE PORTFÖY ROBOTİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 4.34796,
+      "gunlukGetiri": 0.0,
+      "payAdet": 2600423,
+      "portBuyukluk": 11306535.48,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 110,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1067,
+      "pazarPayi": 0.01
+    }
+  },
+  "KOD": {
+    "2026-08-28": {
+      "fonKodu": "KOD",
+      "fonUnvan": "YAPI KREDİ PORTFÖY KÜÇÜK ÖLÇEKLİ ŞİRKETLER DEĞİŞKEN FON",
+      "sonFiyat": 1.048161,
+      "gunlukGetiri": 1.2974,
+      "payAdet": 56808118,
+      "portBuyukluk": 59544031.54,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 730,
+      "pazarPayi": 0.05
+    },
+    "2026-08-27": {
+      "fonKodu": "KOD",
+      "fonUnvan": "YAPI KREDİ PORTFÖY KÜÇÜK ÖLÇEKLİ ŞİRKETLER DEĞİŞKEN FON",
+      "sonFiyat": 1.034736,
+      "gunlukGetiri": 0.0,
+      "payAdet": 56808118,
+      "portBuyukluk": 58781423.58,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 730,
+      "pazarPayi": 0.06
+    }
+  },
+  "RUT": {
+    "2026-08-28": {
+      "fonKodu": "RUT",
+      "fonUnvan": "BV PORTFÖY ROBOTİK VE UZAY TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.562385,
+      "gunlukGetiri": 1.8854,
+      "payAdet": 76586945,
+      "portBuyukluk": 196245223.44,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 28,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 4727,
+      "pazarPayi": 0.19
+    },
+    "2026-08-27": {
+      "fonKodu": "RUT",
+      "fonUnvan": "BV PORTFÖY ROBOTİK VE UZAY TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.514968,
+      "gunlukGetiri": 0.0,
+      "payAdet": 76586945,
+      "portBuyukluk": 192613700.36,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 28,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 4727,
+      "pazarPayi": 0.19
+    }
+  },
+  "CKL": {
+    "2026-08-28": {
+      "fonKodu": "CKL",
+      "fonUnvan": "YAPI KREDİ PORTFÖY ÇOKLU VARLIK DEĞİŞKEN FON",
+      "sonFiyat": 1.607764,
+      "gunlukGetiri": 0.0487,
+      "payAdet": 456884984,
+      "portBuyukluk": 734563069.84,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 38,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1173,
+      "pazarPayi": 0.65
+    }
+  },
+  "CPT": {
+    "2026-08-28": {
+      "fonKodu": "CPT",
+      "fonUnvan": "ROTA PORTFÖY ÇİP TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 3.798361,
+      "gunlukGetiri": 1.057,
+      "payAdet": 269334656,
+      "portBuyukluk": 1023030288.03,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 2,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 14499,
+      "pazarPayi": 0.91
+    }
+  },
+  "DFC": {
+    "2026-08-28": {
+      "fonKodu": "DFC",
+      "fonUnvan": "DENİZ PORTFÖY TARIM VE GIDA DEĞİŞKEN FON",
+      "sonFiyat": 3.192308,
+      "gunlukGetiri": -1.0179,
+      "payAdet": 32354886,
+      "portBuyukluk": 103286764.42,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 126,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1529,
+      "pazarPayi": 0.09
+    }
+  },
+  "DGF": {
+    "2026-08-28": {
+      "fonKodu": "DGF",
+      "fonUnvan": "A1 CAPİTAL PORTFÖY DEĞİŞKEN FON",
+      "sonFiyat": 1.507917,
+      "gunlukGetiri": 1.1991,
+      "payAdet": 231967802,
+      "portBuyukluk": 349788170.4,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 362,
+      "pazarPayi": 0.31
+    }
+  },
+  "DHT": {
+    "2026-08-28": {
+      "fonKodu": "DHT",
+      "fonUnvan": "DENİZ PORTFÖY HAVACILIK VE SAVUNMA TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 1.186973,
+      "gunlukGetiri": 0.1559,
+      "payAdet": 67685462,
+      "portBuyukluk": 80340802.28,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 776,
+      "pazarPayi": 0.07
+    }
+  },
+  "DID": {
+    "2026-08-28": {
+      "fonKodu": "DID",
+      "fonUnvan": "DENİZ PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.478644,
+      "gunlukGetiri": 0.2873,
+      "payAdet": 18917049,
+      "portBuyukluk": 27971588.89,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 103,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 156,
+      "pazarPayi": 0.02
+    }
+  },
+  "DRT": {
+    "2026-08-28": {
+      "fonKodu": "DRT",
+      "fonUnvan": "DENİZ PORTFÖY ROBOTİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 1.252113,
+      "gunlukGetiri": 1.0385,
+      "payAdet": 34155132,
+      "portBuyukluk": 42766087.74,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 517,
+      "pazarPayi": 0.04
+    }
+  },
+  "DTM": {
+    "2026-08-28": {
+      "fonKodu": "DTM",
+      "fonUnvan": "DENİZ PORTFÖY TEMETTÜ ÖDEYEN ŞİRKETLER DEĞİŞKEN FON",
+      "sonFiyat": 1.471712,
+      "gunlukGetiri": -0.5032,
+      "payAdet": 42466242,
+      "portBuyukluk": 62498090.41,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 109,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2751,
+      "pazarPayi": 0.06
+    }
+  },
+  "GPB": {
+    "2026-08-28": {
+      "fonKodu": "GPB",
+      "fonUnvan": "GARANTİ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 12.290466,
+      "gunlukGetiri": 0.1076,
+      "payAdet": 102325625,
+      "portBuyukluk": 1257629659.92,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 76,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9519,
+      "pazarPayi": 1.12
+    }
+  },
+  "GPG": {
+    "2026-08-28": {
+      "fonKodu": "GPG",
+      "fonUnvan": "INVEO PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 17.180128,
+      "gunlukGetiri": -0.5872,
+      "payAdet": 62258192,
+      "portBuyukluk": 1069603720.94,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 45,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2970,
+      "pazarPayi": 0.95
+    }
+  },
+  "GPI": {
+    "2026-08-28": {
+      "fonKodu": "GPI",
+      "fonUnvan": "GARANTİ PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 18.769595,
+      "gunlukGetiri": 0.2802,
+      "payAdet": 39713878,
+      "portBuyukluk": 745413415.87,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 71,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2810,
+      "pazarPayi": 0.66
+    }
+  },
+  "GPT": {
+    "2026-08-28": {
+      "fonKodu": "GPT",
+      "fonUnvan": "AKTİF PORTFÖY ROBOTİK TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.840272,
+      "gunlukGetiri": 1.439,
+      "payAdet": 37300985,
+      "portBuyukluk": 105944945.75,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 20,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3131,
+      "pazarPayi": 0.09
+    }
+  },
+  "GVA": {
+    "2026-08-28": {
+      "fonKodu": "GVA",
+      "fonUnvan": "GARANTİ PORTFÖY ELEKTRİKLİ VE OTONOM ARAÇLAR DEĞİŞKEN FON",
+      "sonFiyat": 4.154811,
+      "gunlukGetiri": 0.1765,
+      "payAdet": 23603643,
+      "portBuyukluk": 98068685.64,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 96,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3439,
+      "pazarPayi": 0.09
+    }
+  },
+  "GZH": {
+    "2026-08-28": {
+      "fonKodu": "GZH",
+      "fonUnvan": "GARANTİ PORTFÖY TEMİZ ENERJİ DEĞİŞKEN FON",
+      "sonFiyat": 4.896839,
+      "gunlukGetiri": 0.6342,
+      "payAdet": 76331097,
+      "portBuyukluk": 373781076.83,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 61,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 5657,
+      "pazarPayi": 0.33
+    }
+  },
+  "GZL": {
+    "2026-08-28": {
+      "fonKodu": "GZL",
+      "fonUnvan": "GARANTİ PORTFÖY TARIM VE GIDA SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 5.698684,
+      "gunlukGetiri": -1.1562,
+      "payAdet": 64560156,
+      "portBuyukluk": 367907938.76,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 57,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 6027,
+      "pazarPayi": 0.33
+    }
+  },
+  "IJC": {
+    "2026-08-28": {
+      "fonKodu": "IJC",
+      "fonUnvan": "İŞ PORTFÖY YARI İLETKEN TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 16.200743,
+      "gunlukGetiri": 1.6931,
+      "payAdet": 301304981,
+      "portBuyukluk": 4881364522.02,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 4,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 46311,
+      "pazarPayi": 4.33
+    }
+  },
+  "NRC": {
+    "2026-08-28": {
+      "fonKodu": "NRC",
+      "fonUnvan": "NEO PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 11.561432,
+      "gunlukGetiri": -0.7073,
+      "payAdet": 20273147,
+      "portBuyukluk": 234386606.23,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 135,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 3582,
+      "pazarPayi": 0.21
+    }
+  },
+  "NTI": {
+    "2026-08-28": {
+      "fonKodu": "NTI",
+      "fonUnvan": "NEO PORTFÖY TEKNOLOJİ VE İNOVASYON DEĞİŞKEN FON",
+      "sonFiyat": 1.584298,
+      "gunlukGetiri": 1.5108,
+      "payAdet": 214431134,
+      "portBuyukluk": 339722850.58,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 23,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1589,
+      "pazarPayi": 0.3
+    }
+  },
+  "NZH": {
+    "2026-08-28": {
+      "fonKodu": "NZH",
+      "fonUnvan": "NEO PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 3.624823,
+      "gunlukGetiri": 0.5561,
+      "payAdet": 156899553,
+      "portBuyukluk": 568733125.69,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 60,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 296,
+      "pazarPayi": 0.5
+    }
+  },
+  "OBP": {
+    "2026-08-28": {
+      "fonKodu": "OBP",
+      "fonUnvan": "OYAK PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.20915,
+      "gunlukGetiri": 0.1029,
+      "payAdet": 188988578,
+      "portBuyukluk": 39526969.68,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 95,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 825,
+      "pazarPayi": 0.04
+    }
+  },
+  "ODG": {
+    "2026-08-28": {
+      "fonKodu": "ODG",
+      "fonUnvan": "ONE PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 1.19597,
+      "gunlukGetiri": -0.0163,
+      "payAdet": 56651540,
+      "portBuyukluk": 67753561.99,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 40,
+      "pazarPayi": 0.06
+    }
+  },
+  "OKD": {
+    "2026-08-28": {
+      "fonKodu": "OKD",
+      "fonUnvan": "OYAK PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.62033,
+      "gunlukGetiri": -0.092,
+      "payAdet": 135386135,
+      "portBuyukluk": 83984071.32,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 80,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 982,
+      "pazarPayi": 0.07
+    }
+  },
+  "OPB": {
+    "2026-08-28": {
+      "fonKodu": "OPB",
+      "fonUnvan": "OSMANLI PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 13.823098,
+      "gunlukGetiri": 0.0788,
+      "payAdet": 3687849,
+      "portBuyukluk": 50977497.97,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 47,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 414,
+      "pazarPayi": 0.05
+    }
+  },
+  "OPF": {
+    "2026-08-28": {
+      "fonKodu": "OPF",
+      "fonUnvan": "OSMANLI PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 3.237603,
+      "gunlukGetiri": 0.9256,
+      "payAdet": 141230194,
+      "portBuyukluk": 457247323.37,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 14,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1041,
+      "pazarPayi": 0.41
+    }
+  },
+  "OPL": {
+    "2026-08-28": {
+      "fonKodu": "OPL",
+      "fonUnvan": "OSMANLI PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 9.972308,
+      "gunlukGetiri": -0.1966,
+      "payAdet": 3638879,
+      "portBuyukluk": 36288022.84,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 43,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 495,
+      "pazarPayi": 0.03
+    }
+  },
+  "OTM": {
+    "2026-08-28": {
+      "fonKodu": "OTM",
+      "fonUnvan": "AZİMUT PORTFÖY OTOMOTİV SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.300752,
+      "gunlukGetiri": -0.6307,
+      "payAdet": 10489959,
+      "portBuyukluk": 13644838.59,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 143,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 94,
+      "pazarPayi": 0.01
+    }
+  },
+  "SPR": {
+    "2026-08-28": {
+      "fonKodu": "SPR",
+      "fonUnvan": "BV PORTFÖY SPOR ENDÜSTRİSİ DEĞİŞKEN FON",
+      "sonFiyat": 1.334551,
+      "gunlukGetiri": -0.4479,
+      "payAdet": 6591197,
+      "portBuyukluk": 8796291.76,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 144,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 163,
+      "pazarPayi": 0.01
+    }
+  },
+  "SSK": {
+    "2026-08-28": {
+      "fonKodu": "SSK",
+      "fonUnvan": "DENİZ PORTFÖY SAĞLIK SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 1.781454,
+      "gunlukGetiri": -0.7238,
+      "payAdet": 28552859,
+      "portBuyukluk": 50865606.36,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 49,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 592,
+      "pazarPayi": 0.05
+    }
+  },
+  "SUA": {
+    "2026-08-28": {
+      "fonKodu": "SUA",
+      "fonUnvan": "ÜNLÜ PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.600868,
+      "gunlukGetiri": 0.1123,
+      "payAdet": 3703213941,
+      "portBuyukluk": 2225143688.13,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 32,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1163,
+      "pazarPayi": 1.97
+    }
+  },
+  "SUB": {
+    "2026-08-28": {
+      "fonKodu": "SUB",
+      "fonUnvan": "ÜNLÜ PORTFÖY İKİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 0.402634,
+      "gunlukGetiri": 0.0395,
+      "payAdet": 277011776,
+      "portBuyukluk": 111534483.02,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 116,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 758,
+      "pazarPayi": 0.1
+    }
+  },
+  "SVB": {
+    "2026-08-28": {
+      "fonKodu": "SVB",
+      "fonUnvan": "STRATEJİ PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 9.54244,
+      "gunlukGetiri": 0.274,
+      "payAdet": 26023324,
+      "portBuyukluk": 248326009.59,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 117,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1313,
+      "pazarPayi": 0.22
+    }
+  },
+  "TAR": {
+    "2026-08-28": {
+      "fonKodu": "TAR",
+      "fonUnvan": "AK PORTFÖY TARIM VE GIDA TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 2.560682,
+      "gunlukGetiri": -1.2824,
+      "payAdet": 51253510,
+      "portBuyukluk": 131243915.63,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 131,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 6761,
+      "pazarPayi": 0.12
+    }
+  },
+  "TE3": {
+    "2026-08-28": {
+      "fonKodu": "TE3",
+      "fonUnvan": "TEB PORTFÖY MUTLAK GETİRİ HEDEFLİ DEĞİŞKEN FON",
+      "sonFiyat": 41.482643,
+      "gunlukGetiri": -0.2073,
+      "payAdet": 27873957,
+      "portBuyukluk": 1156285402.51,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 31,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2917,
+      "pazarPayi": 1.03
+    }
+  },
+  "TE4": {
+    "2026-08-28": {
+      "fonKodu": "TE4",
+      "fonUnvan": "TEB PORTFÖY BİRİNCİ DEĞİŞKEN FON",
+      "sonFiyat": 6.607077,
+      "gunlukGetiri": 0.1264,
+      "payAdet": 277837427,
+      "portBuyukluk": 1835693328.73,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 39,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1441,
+      "pazarPayi": 1.63
+    }
+  },
+  "TGA": {
+    "2026-08-28": {
+      "fonKodu": "TGA",
+      "fonUnvan": "GARANTİ PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 0.488233,
+      "gunlukGetiri": 0.4985,
+      "payAdet": 1679419320,
+      "portBuyukluk": 819947710.78,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 122,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 6201,
+      "pazarPayi": 0.73
+    }
+  },
+  "TGR": {
+    "2026-08-28": {
+      "fonKodu": "TGR",
+      "fonUnvan": "AK PORTFÖY TURİZM VE SEYAHAT SEKTÖRÜ DEĞİŞKEN FON",
+      "sonFiyat": 7.088215,
+      "gunlukGetiri": -1.0159,
+      "payAdet": 16144206,
+      "portBuyukluk": 114433597.26,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 141,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 5677,
+      "pazarPayi": 0.1
+    }
+  },
+  "ZBD": {
+    "2026-08-28": {
+      "fonKodu": "ZBD",
+      "fonUnvan": "ZİRAAT PORTFÖY DENGELİ DEĞİŞKEN FON",
+      "sonFiyat": 686.398137,
+      "gunlukGetiri": 0.2682,
+      "payAdet": 1372738,
+      "portBuyukluk": 942245080.14,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 127,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2064,
+      "pazarPayi": 0.84
+    }
+  },
+  "ZDD": {
+    "2026-08-28": {
+      "fonKodu": "ZDD",
+      "fonUnvan": "ZİRAAT PORTFÖY TEMKİNLİ DEĞİŞKEN FON",
+      "sonFiyat": 7.58484,
+      "gunlukGetiri": 0.2077,
+      "payAdet": 68330617,
+      "portBuyukluk": 518276829.69,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 79,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 1411,
+      "pazarPayi": 0.46
+    }
+  },
+  "ZDZ": {
+    "2026-08-28": {
+      "fonKodu": "ZDZ",
+      "fonUnvan": "ZİRAAT PORTFÖY AGRESİF DEĞİŞKEN FON",
+      "sonFiyat": 13.14135,
+      "gunlukGetiri": 0.419,
+      "payAdet": 78437033,
+      "portBuyukluk": 1030768520.07,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 157,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 8598,
+      "pazarPayi": 0.91
+    }
+  },
+  "ZFB": {
+    "2026-08-28": {
+      "fonKodu": "ZFB",
+      "fonUnvan": "AK PORTFÖY FİNTEK VE BLOKZİNCİRİ TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 7.37252,
+      "gunlukGetiri": 1.5846,
+      "payAdet": 143145578,
+      "portBuyukluk": 1055343664.39,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 33,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 15231,
+      "pazarPayi": 0.94
+    }
+  },
+  "ZIH": {
+    "2026-08-28": {
+      "fonKodu": "ZIH",
+      "fonUnvan": "ZİRAAT PORTFÖY HAVACILIK VE SAVUNMA TEKNOLOJİLERİ DEĞİŞKEN FON",
+      "sonFiyat": 0.976989,
+      "gunlukGetiri": 0.0674,
+      "payAdet": 642274647,
+      "portBuyukluk": 627495416.5,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 0,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 9185,
+      "pazarPayi": 0.56
+    }
+  },
+  "ZMY": {
+    "2026-08-28": {
+      "fonKodu": "ZMY",
+      "fonUnvan": "ZİRAAT PORTFÖY METAVERSE VE YENİ TEKNOLOJİLER DEĞİŞKEN FON",
+      "sonFiyat": 6.627144,
+      "gunlukGetiri": 1.7618,
+      "payAdet": 29444900,
+      "portBuyukluk": 195135591.09,
+      "fonKategori": "Değişken Fon",
+      "kategoriDerece": 129,
+      "kategoriFonSay": 185,
+      "yatirimciSayi": 2807,
+      "pazarPayi": 0.17
+    }
+  }
+}

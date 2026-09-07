@@ -1,0 +1,19 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment & credentials
+.env
+*.env
+*.key
+*.pem
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Log files
+*.log
