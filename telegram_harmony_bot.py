@@ -153,7 +153,13 @@ def tum_fonlarin_detaylarini_topla():
                 r = requests.post(url, json={"fonKodu": f, "dil": "TR"}, headers=headers, timeout=5)
                 if r.status_code == 200:
                     res = r.json().get("resultList", [])
-                    return f, res[0] if res else None
+                    if res:
+                        data = res[0]
+                        vd, av, sv = get_varlik_dagilimi_ve_valor(f)
+                        data["varlik_dagilimi"] = dict(vd)
+                        data["alisValor"] = av
+                        data["satisValor"] = sv
+                        return f, data
             except:
                 pass
             return f, None
@@ -671,6 +677,32 @@ def cmd_start(message):
         "<i>Lütfen aşağıdaki menüden bir işlem seçin:</i>"
     )
     bot.send_message(message.chat.id, msg, reply_markup=ana_menu_klavyesi())
+
+@bot.message_handler(commands=['arsivle', 'arsiv'])
+def cmd_arsivle(message):
+    if not yetki_kontrol(message): return
+    bot.send_message(message.chat.id, "⏳ <b>TEFAS'taki TÜM fonlar ve portföy dağılımları taranıyor...</b>\n<i>Bu işlem arka planda ~15-20 saniye sürecektir.</i>")
+    def run_archive():
+        try:
+            sys.path.insert(0, os.path.join(BASE_DIR, "flow_research", "collectors"))
+            from tefas_tum_arsivleyici import tum_tefas_arsivle
+            res = tum_tefas_arsivle()
+            bot.send_message(
+                message.chat.id,
+                f"✅ <b>TEFAS EKSİKSİZ ARŞİVLEME TAMAMLANDI!</b>\n"
+                f"<code>═════════════════════════════════════════</code>\n"
+                f"📅 <b>Tarih          :</b> {res.get('tarih')}\n"
+                f"📦 <b>Arşivlenen Fon :</b> <b>{res.get('basarili')} / {res.get('toplam')} adet</b>\n"
+                f"⏱️ <b>İşlem Süresi    :</b> {res.get('sure_saniye')} saniye\n"
+                f"📊 <b>Kapsam         :</b> Fiyat, 1A/3A/6A/1Y Getiriler, AUM, Pay, Yatırımcı ve <b>Tam Portföy Varlık Dağılımı</b>\n"
+                f"<code>═════════════════════════════════════════</code>\n"
+                f"<i>Not: Canlı 156 fonluk alım/satım havuzumuz bağımsız tutulmuştur.</i>"
+            )
+        except Exception as e:
+            bot.send_message(message.chat.id, f"❌ Arşivleme sırasında hata: {e}")
+            
+    import threading
+    threading.Thread(target=run_archive, daemon=True).start()
 
 
 @bot.message_handler(func=lambda msg: msg.text in ["🌡️ PİYASA ISISI", "PİYASA ISISI", "/isi", "isi", "İSİ"])
@@ -1616,6 +1648,18 @@ def arka_plan_zamanlayici():
                 )
                 bot.send_message(AUTHORIZED_CHAT_ID, msg)
                 gonderilmis_alarmlar.add(alarm_1830)
+
+            # 18:45 - TEFAS TÜM FONLARIN EKSİKSİZ ARŞİVLENMESİ (1.000+ Fon ve Portföy Dağılımları)
+            alarm_1845 = f"{bugun_str}_1845"
+            if saat_dakika == "18:45" and alarm_1845 not in gonderilmis_alarmlar:
+                print(f"[ZAMANLAYICI]: 18:45 TEFAS Tüm Fonlar ve Portföy Dağılımı Arşivleme Tetiklendi...")
+                try:
+                    sys.path.insert(0, os.path.join(BASE_DIR, "flow_research", "collectors"))
+                    from tefas_tum_arsivleyici import tum_tefas_arsivle
+                    threading.Thread(target=tum_tefas_arsivle, daemon=True).start()
+                except Exception as e:
+                    print(f"[18:45 ARSIV TETIKLEME HATA]: {e}")
+                gonderilmis_alarmlar.add(alarm_1845)
 
         except Exception as e:
             print(f"[ZAMANLAYICI HATA]: {e}")
