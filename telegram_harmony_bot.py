@@ -54,16 +54,81 @@ DETAY_ARSIV_PATH = os.path.join(BASE_DIR, "flow_research", "data", "gunluk_detay
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
 user_states = {} # FSM işlem durumları
 
-def github_verisini_guncelle(zorla: bool = False):
-    """GitHub üzerinden güncel fon fiyat önbelleğini kontrol eder ve günceller."""
+def otomatik_pivot_guncelle(zorla: bool = False):
+    """Eksik günleri doğrudan TEFAS'tan çekip 5_yil_pivot.csv'yi sunucu üzerinde otomatik günceller."""
     try:
-        r = requests.get(GITHUB_FIYAT_CACHE_URL, timeout=8)
-        if r.status_code == 200:
-            data = r.json()
-            return True, f"GitHub önbelleği başarıyla güncellendi ({len(data)} fon)."
-        return False, f"GitHub HTTP {r.status_code}"
+        from tefas import Crawler
+        if not os.path.exists(PIVOT_CSV_PATH):
+            return False, "Pivot dosyası bulunamadı"
+            
+        df_pivot = pd.read_csv(PIVOT_CSV_PATH, index_col=0, parse_dates=True).sort_index()
+        son_kayitli_tarih = df_pivot.index[-1].date()
+        bugun = datetime.date.today()
+        
+        hedef_tarih = bugun
+        if bugun.weekday() == 5:
+            hedef_tarih = bugun - datetime.timedelta(days=1)
+        elif bugun.weekday() == 6:
+            hedef_tarih = bugun - datetime.timedelta(days=2)
+            
+        now = datetime.datetime.now()
+        if now.time() < datetime.time(9, 0) and hedef_tarih == bugun:
+            hedef_tarih = bugun - datetime.timedelta(days=1)
+            if hedef_tarih.weekday() == 6:
+                hedef_tarih = hedef_tarih - datetime.timedelta(days=2)
+                
+        if not zorla and son_kayitli_tarih >= hedef_tarih:
+            return True, f"Pivot güncel ({son_kayitli_tarih})"
+            
+        baslangic = (son_kayitli_tarih + datetime.timedelta(days=1)).strftime('%Y-%m-%d')
+        bitis = bugun.strftime('%Y-%m-%d')
+        
+        crawler = Crawler()
+        fonlar = list(df_pivot.columns)
+        
+        def fetch_single(f):
+            try:
+                c_df = crawler.fetch(start=baslangic, end=bitis, name=f)
+                if c_df is not None and not c_df.empty:
+                    return f, c_df[['date', 'price']].set_index('date')['price']
+            except:
+                pass
+            return f, None
+            
+        with ThreadPoolExecutor(max_workers=15) as ex:
+            results = list(ex.map(fetch_single, fonlar))
+            
+        new_data = {}
+        for f, s in results:
+            if s is not None and not s.empty:
+                new_data[f] = s
+                
+        if not new_data:
+            return False, "Yeni veri bulunamadı"
+            
+        df_new = pd.DataFrame(new_data)
+        df_new.index = pd.to_datetime(df_new.index)
+        df_new = df_new.sort_index()
+        
+        df_combined = pd.concat([df_pivot, df_new], axis=0)
+        df_combined = df_combined[~df_combined.index.duplicated(keep='last')].sort_index()
+        df_combined = df_combined.replace(0.0, np.nan).ffill()
+        df_combined.to_csv(PIVOT_CSV_PATH)
+
+        
+        for p_alt in [os.path.join(BASE_DIR, "5_yil_pivot.csv"), os.path.join(os.path.dirname(BASE_DIR), "5_yil_pivot.csv")]:
+            if os.path.exists(p_alt) and p_alt != PIVOT_CSV_PATH:
+                df_combined.to_csv(p_alt)
+                
+        print(f"[OTO-PIVOT GÜNCELLEME]: {df_combined.index[-1].strftime('%Y-%m-%d')} tarihine eşitlendi.")
+        return True, "Güncellendi"
     except Exception as e:
-        return False, f"GitHub bağlantı hatası: {e}"
+        print(f"[OTO-PIVOT HATA]: {e}")
+        return False, str(e)
+
+def github_verisini_guncelle(zorla: bool = False):
+    return otomatik_pivot_guncelle(zorla=zorla)
+
 
 
 
@@ -444,6 +509,7 @@ def get_fon_tum_getiri_periyotlari(fon_kodu: str) -> str:
 
 def get_latest_radar():
     try:
+        otomatik_pivot_guncelle()
         sys.path.insert(0, BASE_DIR)
         from harmony_v2_2_live_production import HarmonyV22LiveProduction
         eng = HarmonyV22LiveProduction()
@@ -1399,8 +1465,59 @@ def arka_plan_zamanlayici():
                         
                     son_bilinen_fon_fiyatlari[f_kod] = yeni_fiyat
 
-            # 09:55 - Sabah Raporu
+            # 09:30 - Sabah İlk TEFAS Açılış ve Portföy Raporu
+            alarm_0930 = f"{bugun_str}_0930"
+            if saat_dakika == "09:30" and alarm_0930 not in gonderilmis_alarmlar:
+                otomatik_pivot_guncelle()
+                tum_fonlarin_detaylarini_topla()
+                radar = get_latest_radar()
+                sys.path.insert(0, BASE_DIR)
+                from canli_muhasebe_motoru import CanliMuhasebeMotoru
+                muh = CanliMuhasebeMotoru()
+                durum = muh.portfoy_degerini_guncelle()
+                eldeki_dict = durum.get("eldeki_fonlar", {})
+                
+                toplam_maliyet = 0.0
+                fon_satirlari = []
+                for f_kod, f_info in eldeki_dict.items():
+                    f_adet = f_info.get("pay_adedi", 0.0)
+                    f_maliyet = f_info.get("maliyet_fiyati", 0.0)
+                    f_nav = f_info.get("son_nav", 0.0)
+                    f_tutar = f_info.get("guncel_deger_tl", f_adet * f_nav)
+                    f_top_mal = f_adet * f_maliyet
+                    toplam_maliyet += f_top_mal
+                    f_kar = f_tutar - f_top_mal
+                    f_kar_pct = (f_kar / f_top_mal * 100) if f_top_mal > 0 else 0.0
+                    f_ikon = "🟢" if f_kar >= 0 else "🔴"
+                    fon_satirlari.append(f"• <b>{f_kod}:</b> <code>{f_adet:,.0f} Pay</code> ({f_nav:.4f} TL) ➔ <b>{f_tutar:,.2f} TL</b> | {f_ikon} %{f_kar_pct:+.2f}")
+                
+                toplam_portfoy = durum.get("toplam_portfoy_tl", 0.0)
+                genel_kar_tl = toplam_portfoy - toplam_maliyet
+                genel_kar_pct = (genel_kar_tl / toplam_maliyet * 100) if toplam_maliyet > 0 else 0.0
+                genel_ikon = "🟢" if genel_kar_tl >= 0 else "🔴"
+                fonlar_metin = "\n".join(fon_satirlari) if fon_satirlari else "• <i>Portföyde kayıtlı fon bulunmuyor.</i>"
+                
+                msg = (
+                    f"☕ <b>GÜNAYDIN! İLK TEFAS VE PORTFÖY RAPORU (09:30)</b>\n"
+                    f"<code>═════════════════════════════════════════</code>\n"
+                    f"💰 <b>Toplam Portföy  :</b> <b>{toplam_portfoy:,.2f} TL</b>\n"
+                    f"📈 <b>Genel Kâr/Zarar :</b> {genel_ikon} <b>{genel_kar_tl:+,.2f} TL (%{genel_kar_pct:+.2f})</b>\n"
+                    f"📉 <b>Tepe Çekilmesi :</b> %{durum.get('mevcut_cekilme_pct', 0):.2f}\n"
+                    f"<code>─────────────────────────────────────────</code>\n"
+                    f"📦 <b>ELDEKİ TÜM FONLARINIZ:</b>\n"
+                    f"{fonlar_metin}\n"
+                    f"<code>─────────────────────────────────────────</code>\n"
+                    f"🚦 <b>Piyasa Rejimi   :</b> <code>[{radar.get('rejim', 'NORMAL')}]</code> (Genişlik: %{radar.get('breadth', 0):.1f})\n"
+                    f"🏆 <b>Radar Lideri    :</b> <b>{radar.get('lider_fon', 'SOS')}</b>\n"
+                    f"<code>═════════════════════════════════════════</code>\n"
+                    f"🎯 <i>Saat 13:00'te resmi emir ve karar talimatı gönderilecektir.</i>"
+                )
+                bot.send_message(AUTHORIZED_CHAT_ID, msg, reply_markup=ana_menu_klavyesi())
+                gonderilmis_alarmlar.add(alarm_0930)
+
+            # 09:55 - Sabah Eksiksiz Piyasa ve Portföy Raporu
             alarm_0955 = f"{bugun_str}_0955"
+
             if saat_dakika == "09:55" and alarm_0955 not in gonderilmis_alarmlar:
                 tum_fonlarin_detaylarini_topla()
                 radar = get_latest_radar()
@@ -1409,77 +1526,44 @@ def arka_plan_zamanlayici():
                 muh = CanliMuhasebeMotoru()
                 durum = muh.portfoy_degerini_guncelle()
                 eldeki_dict = durum.get("eldeki_fonlar", {})
-                eldeki_kod = list(eldeki_dict.keys())[0] if eldeki_dict else "PPZ"
-                eldeki_info = eldeki_dict.get(eldeki_kod, {})
+                
+                toplam_maliyet = 0.0
+                fon_satirlari = []
+                for f_kod, f_info in eldeki_dict.items():
+                    f_adet = f_info.get("pay_adedi", 0.0)
+                    f_maliyet = f_info.get("maliyet_fiyati", 0.0)
+                    f_nav = f_info.get("son_nav", 0.0)
+                    f_tutar = f_info.get("guncel_deger_tl", f_adet * f_nav)
+                    f_top_mal = f_adet * f_maliyet
+                    toplam_maliyet += f_top_mal
+                    f_kar = f_tutar - f_top_mal
+                    f_kar_pct = (f_kar / f_top_mal * 100) if f_top_mal > 0 else 0.0
+                    f_ikon = "🟢" if f_kar >= 0 else "🔴"
+                    fon_satirlari.append(f"• <b>{f_kod}:</b> <code>{f_adet:,.0f} Pay</code> ({f_nav:.4f} TL) ➔ <b>{f_tutar:,.2f} TL</b> | {f_ikon} %{f_kar_pct:+.2f}")
+                
+                toplam_portfoy = durum.get("toplam_portfoy_tl", 0.0)
+                genel_kar_tl = toplam_portfoy - toplam_maliyet
+                genel_kar_pct = (genel_kar_tl / toplam_maliyet * 100) if toplam_maliyet > 0 else 0.0
+                genel_ikon = "🟢" if genel_kar_tl >= 0 else "🔴"
+                fonlar_metin = "\n".join(fon_satirlari) if fon_satirlari else "• <i>Portföyde kayıtlı fon bulunmuyor.</i>"
                 
                 msg = (
-                    f"🌅 <b>SABAH PİYASA VE PORTFÖY RAPORU (09:55)</b>\n"
+                    f"🌅 <b>SABAH AÇILIŞ VE PORTFÖY RAPORU (09:55)</b>\n"
                     f"<code>═════════════════════════════════════════</code>\n"
-                    f"💰 <b>Portföy Değeriniz:</b> <b>{durum.get('toplam_portfoy_tl', 0):,.2f} TL</b>\n"
-                    f"📦 <b>Eldeki Fon       :</b> <b>{eldeki_kod}</b> ({eldeki_info.get('son_nav', 0):.6f} TL)\n"
-                    f"🚦 <b>Piyasa Rejimi    :</b> <code>[{radar.get('rejim', 'NORMAL')}]</code> (Genişlik: %{radar.get('breadth', 0):.1f})\n"
-                    f"🏆 <b>Günün 1. Lideri  :</b> <b>{radar.get('lider_fon', 'SOS')}</b>\n"
+                    f"💰 <b>Toplam Portföy  :</b> <b>{toplam_portfoy:,.2f} TL</b>\n"
+                    f"📈 <b>Genel Kâr/Zarar :</b> {genel_ikon} <b>{genel_kar_tl:+,.2f} TL (%{genel_kar_pct:+.2f})</b>\n"
+                    f"📉 <b>Tepe Çekilmesi :</b> %{durum.get('mevcut_cekilme_pct', 0):.2f}\n"
+                    f"<code>─────────────────────────────────────────</code>\n"
+                    f"📦 <b>ELDEKİ TÜM FONLARINIZ:</b>\n"
+                    f"{fonlar_metin}\n"
+                    f"<code>─────────────────────────────────────────</code>\n"
+                    f"🚦 <b>Piyasa Rejimi   :</b> <code>[{radar.get('rejim', 'NORMAL')}]</code> (Genişlik: %{radar.get('breadth', 0):.1f})\n"
+                    f"🏆 <b>Radar Lideri    :</b> <b>{radar.get('lider_fon', 'SOS')}</b>\n"
                     f"<code>═════════════════════════════════════════</code>\n"
-                    f"🎯 <i>Saat 10:00 ve 11:00'de erken karar ve sinyal talimatı otomatik gönderilecektir.</i>"
+                    f"🎯 <i>Saat 13:00'te resmi emir ve karar talimatı gönderilecektir.</i>"
                 )
                 bot.send_message(AUTHORIZED_CHAT_ID, msg, reply_markup=ana_menu_klavyesi())
                 gonderilmis_alarmlar.add(alarm_0955)
-
-            # 10:00 - Sabah Erken Karar Sinyali
-            alarm_1000 = f"{bugun_str}_1000"
-            if saat_dakika == "10:00" and alarm_1000 not in gonderilmis_alarmlar:
-                msg = olustur_harmony_emir_talimati("10:00 SABAH İLK")
-                bot.send_message(AUTHORIZED_CHAT_ID, msg, reply_markup=ana_menu_klavyesi())
-                gonderilmis_alarmlar.add(alarm_1000)
-
-            # 10:15
-            alarm_1015 = f"{bugun_str}_1015"
-            if saat_dakika == "10:15" and alarm_1015 not in gonderilmis_alarmlar:
-                radar = get_latest_radar()
-                msg = (
-                    f"🔔 <b>PİYASA İLK SEANS KONTROLÜ (10:15)</b>\n\n"
-                    f"Piyasa genişliği <b>%{radar.get('breadth', 0):.1f}</b> ile güçlü seyrediyor.\n"
-                    f"Radardaki lider fonlar: <b>{', '.join([f['fon'] for f in radar.get('top10', [])[:3]])}</b>"
-                )
-                bot.send_message(AUTHORIZED_CHAT_ID, msg)
-                gonderilmis_alarmlar.add(alarm_1015)
-
-            # 10:20
-            alarm_1020 = f"{bugun_str}_1020"
-            if saat_dakika == "10:20" and alarm_1020 not in gonderilmis_alarmlar:
-                tum_fonlarin_detaylarini_topla()
-                radar = get_latest_radar()
-                msg = (
-                    f"🔔 <b>10:20 SEANS VE FON BİLGİSİ GÜNCELLEMESİ</b>\n\n"
-                    f"• Piyasa Genişliği: <b>%{radar.get('breadth', 0):.1f}</b>\n"
-                    f"• Lider Fonlar: <b>{', '.join([f['fon'] for f in radar.get('top10', [])[:3]])}</b>\n\n"
-                    f"<i>Tüm fonların yatırımcı ve pay detayları başarıyla tarandı.</i>"
-                )
-                bot.send_message(AUTHORIZED_CHAT_ID, msg)
-                gonderilmis_alarmlar.add(alarm_1020)
-
-            # 11:00 - Öğle Öncesi Karar Teyidi
-            alarm_1100 = f"{bugun_str}_1100"
-            if saat_dakika == "11:00" and alarm_1100 not in gonderilmis_alarmlar:
-                msg = olustur_harmony_emir_talimati("11:00 ÖĞLE ÖNCESİ")
-                bot.send_message(AUTHORIZED_CHAT_ID, msg, reply_markup=ana_menu_klavyesi())
-                gonderilmis_alarmlar.add(alarm_1100)
-
-            # 12:45
-            alarm_1245 = f"{bugun_str}_1245"
-            if saat_dakika == "12:45" and alarm_1245 not in gonderilmis_alarmlar:
-                tum_fonlarin_detaylarini_topla()
-                sys.path.insert(0, BASE_DIR)
-                from canli_muhasebe_motoru import CanliMuhasebeMotoru
-                muh = CanliMuhasebeMotoru()
-                durum = muh.portfoy_degerini_guncelle()
-                msg = (
-                    f"⏳ <b>12:45 VERİ TEYİDİ & PORTFÖY</b>\n\n"
-                    f"• 13:00 resmi emir fişi öncesi tüm veriler doğrulandı.\n"
-                    f"• Güncel Portföy: <b>{durum.get('toplam_portfoy_tl', 0):,.2f} TL</b>"
-                )
-                bot.send_message(AUTHORIZED_CHAT_ID, msg)
-                gonderilmis_alarmlar.add(alarm_1245)
 
             # 13:00 - Resmi Son Çağrı ve Emir Fişi
             alarm_1300 = f"{bugun_str}_1300"
@@ -1488,8 +1572,7 @@ def arka_plan_zamanlayici():
                 bot.send_message(AUTHORIZED_CHAT_ID, msg, reply_markup=ana_menu_klavyesi())
                 gonderilmis_alarmlar.add(alarm_1300)
 
-
-            # 18:30
+            # 18:30 - Gün Sonu Eksiksiz Kapanış Raporu
             alarm_1830 = f"{bugun_str}_1830"
             if saat_dakika == "18:30" and alarm_1830 not in gonderilmis_alarmlar:
                 tum_fonlarin_detaylarini_topla()
@@ -1498,25 +1581,38 @@ def arka_plan_zamanlayici():
                 muh = CanliMuhasebeMotoru()
                 durum = muh.portfoy_degerini_guncelle()
                 eldeki_dict = durum.get("eldeki_fonlar", {})
-                eldeki_kod = list(eldeki_dict.keys())[0] if eldeki_dict else "PPZ"
-                eldeki_info = eldeki_dict.get(eldeki_kod, {})
                 
-                adet = eldeki_info.get("pay_adedi", 0.0)
-                tutar = eldeki_info.get("guncel_deger_tl", 0.0)
-                maliyet = eldeki_info.get("maliyet_fiyati", 0.0)
-                kar_tl = tutar - (adet * maliyet)
-                kar_pct = (kar_tl / (adet * maliyet) * 100) if maliyet > 0 else 0
-                kz_ikon = "🟢" if kar_tl >= 0 else "🔴"
+                toplam_maliyet = 0.0
+                fon_satirlari = []
+                for f_kod, f_info in eldeki_dict.items():
+                    f_adet = f_info.get("pay_adedi", 0.0)
+                    f_maliyet = f_info.get("maliyet_fiyati", 0.0)
+                    f_nav = f_info.get("son_nav", 0.0)
+                    f_tutar = f_info.get("guncel_deger_tl", f_adet * f_nav)
+                    f_top_mal = f_adet * f_maliyet
+                    toplam_maliyet += f_top_mal
+                    f_kar = f_tutar - f_top_mal
+                    f_kar_pct = (f_kar / f_top_mal * 100) if f_top_mal > 0 else 0.0
+                    f_ikon = "🟢" if f_kar >= 0 else "🔴"
+                    fon_satirlari.append(f"• <b>{f_kod}:</b> <code>{f_adet:,.0f} Pay</code> ({f_nav:.4f} TL) ➔ <b>{f_tutar:,.2f} TL</b> | {f_ikon} <b>{f_kar:+,.2f} TL (%{f_kar_pct:+.2f})</b>")
+                
+                toplam_portfoy = durum.get("toplam_portfoy_tl", 0.0)
+                genel_kar_tl = toplam_portfoy - toplam_maliyet
+                genel_kar_pct = (genel_kar_tl / toplam_maliyet * 100) if toplam_maliyet > 0 else 0.0
+                genel_ikon = "🟢" if genel_kar_tl >= 0 else "🔴"
+                fonlar_metin = "\n".join(fon_satirlari) if fon_satirlari else "• <i>Portföyde kayıtlı fon bulunmuyor.</i>"
                 
                 msg = (
                     f"📊 <b>GÜN SONU KAPANIŞ VE PORTFÖY RAPORU (18:30)</b>\n"
+                    f"<code>═════════════════════════════════════════</code>\n"
+                    f"💰 <b>Toplam Portföy Değeri :</b> <b>{toplam_portfoy:,.2f} TL</b>\n"
+                    f"📈 <b>Toplam Portföy Kâr/Zarar:</b> {genel_ikon} <b>{genel_kar_tl:+,.2f} TL (%{genel_kar_pct:+.2f})</b>\n"
+                    f"📉 <b>Tepe Çekilmesi (DD)    :</b> %{durum.get('mevcut_cekilme_pct', 0):.2f}\n"
                     f"<code>─────────────────────────────────────────</code>\n"
-                    f"💰 <b>Toplam Portföy Değeri :</b> <b>{durum.get('toplam_portfoy_tl', 0):,.2f} TL</b>\n"
-                    f"📦 <b>Eldeki Fon            :</b> <b>{eldeki_kod}</b> ({eldeki_info.get('son_nav', 0):.6f} TL)\n"
-                    f"📈 <b>Toplam Kâr / Zarar    :</b> {kz_ikon} <b>{kar_tl:+,.2f} TL (%{kar_pct:+.2f})</b>\n"
-                    f"📉 <b>Tepe Çekilmesi (DD)   :</b> %{durum.get('mevcut_cekilme_pct', 0):.2f}\n"
-                    f"<code>─────────────────────────────────────────</code>\n"
-                    f"İyi akşamlar dileriz!"
+                    f"📦 <b>GÜNCEL VARLIK DAĞILIMI:</b>\n"
+                    f"{fonlar_metin}\n"
+                    f"<code>═════════════════════════════════════════</code>\n"
+                    f"İyi akşamlar dileriz! 🦅"
                 )
                 bot.send_message(AUTHORIZED_CHAT_ID, msg)
                 gonderilmis_alarmlar.add(alarm_1830)

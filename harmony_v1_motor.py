@@ -55,10 +55,10 @@ class HarmonyMotor:
         parent_dir = os.path.dirname(current_dir)
         
         olasi_pivot_yollari = [
-            os.path.join(parent_dir, "serbest_fon_bot", "csv", "5_yil_pivot.csv"),
-            os.path.join(parent_dir, "serbest_fon_bot", "5_yil_pivot.csv"),
             os.path.join(current_dir, "5_yil_pivot.csv"),
-            os.path.join(current_dir, "flow_research", "data", "5_yil_pivot.csv")
+            os.path.join(current_dir, "flow_research", "data", "5_yil_pivot.csv"),
+            os.path.join(parent_dir, "serbest_fon_bot", "csv", "5_yil_pivot.csv"),
+            os.path.join(parent_dir, "serbest_fon_bot", "5_yil_pivot.csv")
         ]
         
         pivot_csv = None
@@ -80,11 +80,16 @@ class HarmonyMotor:
         
         # Sektör Fonları
         sektor_fonlar = ["TTE", "YZH", "IIH", "MAC", "NRC", "BIO", "GGK", "KZL", "TI3", "TAU"]
+        local_c = os.path.join(current_dir, "onbellek")
         sn_c = os.path.join(parent_dir, "t0sniper", "onbellek")
         t0_c = os.path.join(parent_dir, "t0fon", "onbellek")
         sektor_fiyatlar = {}
         for f in sektor_fonlar:
-            dosya = os.path.join(sn_c, f"fiyatlar_alfa_{f}.json")
+            dosya = os.path.join(local_c, f"fiyatlar_alfa_{f}.json")
+            if not os.path.exists(dosya):
+                dosya = os.path.join(local_c, f"fiyatlar_3yil_{f}.json")
+            if not os.path.exists(dosya):
+                dosya = os.path.join(sn_c, f"fiyatlar_alfa_{f}.json")
             if not os.path.exists(dosya):
                 dosya = os.path.join(t0_c, f"fiyatlar_3yil_{f}.json")
             if os.path.exists(dosya):
@@ -109,12 +114,16 @@ class HarmonyMotor:
         return df_birlesik
 
     def _t0_kasa_getirisi_olustur(self) -> pd.Series:
-        parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        parent_dir = os.path.dirname(current_dir)
+        local_c = os.path.join(current_dir, "onbellek")
         t0_c = os.path.join(parent_dir, "t0fon", "onbellek")
         t0_fonlar = ["PPZ", "PRY", "TP2", "PNU"]
         t0_fiyatlar = {}
         for k in t0_fonlar:
-            dosya = os.path.join(t0_c, f"fiyatlar_3yil_{k}.json")
+            dosya = os.path.join(local_c, f"fiyatlar_3yil_{k}.json")
+            if not os.path.exists(dosya):
+                dosya = os.path.join(t0_c, f"fiyatlar_3yil_{k}.json")
             if os.path.exists(dosya):
                 try:
                     with open(dosya, "r", encoding="utf-8") as file:
