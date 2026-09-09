@@ -1289,8 +1289,9 @@ def callback_handler(call):
                         durum["eldeki_fonlar"][fon]["pay_adedi"] = eski_adet - adet
                         durum["eldeki_fonlar"][fon]["guncel_deger_tl"] = (eski_adet - adet) * fiyat
                 
-                # PPZ Canlı Fiyatı Sorgusu (Dinamik NAV)
-                ppz_fiyat = muh.son_fon_fiyati_getir("PPZ")
+                # PPZ Canlı Fiyatı Sorgusu (Dinamik NAV - Defensive Unpack)
+                ppz_res = muh.son_fon_fiyati_getir("PPZ")
+                ppz_fiyat = ppz_res[0] if isinstance(ppz_res, (tuple, list)) else ppz_res
                 if not ppz_fiyat or ppz_fiyat <= 1.05: 
                     ppz_fiyat = 6.63
 

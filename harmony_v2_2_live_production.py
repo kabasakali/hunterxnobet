@@ -207,11 +207,26 @@ class HarmonyV22LiveProduction:
         mdd = df["dd"].min() * 100.0
         
         daily_rets = df["gunluk_ret"]
-        sharpe = (daily_rets.mean() / (daily_rets.std() + 1e-9)) * np.sqrt(252)
         
-        neg_rets = daily_rets[daily_rets < 0]
-        sortino = (daily_rets.mean() / (neg_rets.std() + 1e-9)) * np.sqrt(252) if len(neg_rets) > 0 else 0.0
+        # Dinamik Risksiz Faiz (Rf) Düşülmüş Kurumsal Metrikler
+        try:
+            from makro_veri_motoru import hesapla_kurumsal_metrikler
+            k_metrikler = hesapla_kurumsal_metrikler(daily_rets)
+            sharpe = k_metrikler.get("kurumsal_sharpe", 0.0)
+            sortino = k_metrikler.get("kurumsal_sortino", 0.0)
+            net_alfa = k_metrikler.get("net_alfa_pct", 0.0)
+        except Exception:
+            # Fallback naive hesaplama
+            sharpe = float((daily_rets.mean() / (daily_rets.std() + 1e-9)) * np.sqrt(252))
+            neg_rets = daily_rets[daily_rets < 0]
+            sortino = float((daily_rets.mean() / (neg_rets.std() + 1e-9)) * np.sqrt(252)) if len(neg_rets) > 0 else 0.0
+            net_alfa = 0.0
+            
         calmar = (cagr / abs(mdd)) if abs(mdd) > 0 else 0.0
+        
+        # Overfitting / In-sample bias denetim uyarısı
+        if sharpe > 3.0 or calmar > 10.0:
+            print(f"[UYARI - OVERFITTING ALARMI] Metrikler piyasa normlarının üzerinde (Kurumsal Sharpe: {sharpe}, Calmar: {round(calmar, 2)}). In-sample yanlılık veya aşırı uyum kontrolü yapılmalıdır.")
         
         yillik_ret = {}
         for y, grp in df.groupby("yil"):
@@ -227,6 +242,7 @@ class HarmonyV22LiveProduction:
             "sharpe_orani": round(sharpe, 2),
             "sortino_orani": round(sortino, 2),
             "calmar_orani": round(calmar, 2),
+            "net_alfa_pct": round(net_alfa, 2),
             "gecis_sayisi": len(gecisler),
             "yillik_getiriler": yillik_ret,
             "gunluk_kayitlar": gunluk_kayitlar,

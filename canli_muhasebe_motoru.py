@@ -53,9 +53,11 @@ class CanliMuhasebeMotoru:
                 self._fiyat_tablosu = pd.DataFrame()
         return self._fiyat_tablosu
 
-    def son_fon_fiyati_getir(self, fon_kodu: str) -> float:
+    def son_fon_fiyati_getir(self, fon_kodu: str, detayli: bool = False):
         """
         TEFAS canlı API'sinden anlık fiyatı çeker. Başarısız olursa yerel pivot tablosundan döner.
+        detayli=True ise (fiyat, canli_mi) döner.
+        detayli=False ise float döner (geriye dönük tam uyumluluk).
         """
         try:
             import requests
@@ -65,7 +67,8 @@ class CanliMuhasebeMotoru:
             if r.status_code == 200:
                 res = r.json().get("resultList", [])
                 if res and "sonFiyat" in res[0]:
-                    return float(res[0]["sonFiyat"])
+                    val = float(res[0]["sonFiyat"])
+                    return (val, True) if detayli else val
         except Exception:
             pass
 
@@ -74,8 +77,9 @@ class CanliMuhasebeMotoru:
             seri = df[fon_kodu].dropna()
             if not seri.empty:
                 val = float(seri.iloc[-1])
-                if val > 0: return val
-        return 0.0 # Başarısızlık durumunda 0.0 döner (Böylece or fallback'ler düzgün tetiklenir)
+                if val > 0: 
+                    return (val, False) if detayli else val
+        return (0.0, False) if detayli else 0.0
 
 
     def _durum_yukle_veya_olustur(self) -> Dict[str, Any]:
@@ -138,7 +142,8 @@ class CanliMuhasebeMotoru:
         """
         toplam_aktif_fon = 0.0
         for f_kod, f_bilgi in self.durum.get("eldeki_fonlar", {}).items():
-            canli_fiyat = self.son_fon_fiyati_getir(f_kod)
+            f_res = self.son_fon_fiyati_getir(f_kod)
+            canli_fiyat = f_res[0] if isinstance(f_res, (tuple, list)) else f_res
             if canli_fiyat > 0.0:
                 f_bilgi["son_nav"] = canli_fiyat
             else:
@@ -151,37 +156,29 @@ class CanliMuhasebeMotoru:
             f_bilgi["guncel_deger_tl"] = round(f_bilgi["pay_adedi"] * canli_fiyat, 2)
             toplam_aktif_fon += f_bilgi["guncel_deger_tl"]
 
-            
-        toplam_takas = sum(t.get("tutar_tl", 0.0) for t in self.durum.get("takasta_bekleyen_islemler", []))
-        serbest_nakit = self.durum.get("serbest_nakit_tl", 0.0)
-        
-        toplam_portfoy = round(toplam_aktif_fon + toplam_takas + serbest_nakit, 2)
+        toplam_portfoy = round(toplam_aktif_fon + self.durum.get("serbest_nakit_tl", 0.0), 2)
         zirve = max(self.durum.get("zirve_portfoy_tl", toplam_portfoy), toplam_portfoy)
-        cur_dd = round((zirve - toplam_portfoy) / (zirve + 1e-8) * 100.0, 2)
-        
+        cekilme = round(((zirve - toplam_portfoy) / zirve) * 100.0, 2) if zirve > 0 else 0.0
+
         self.durum["toplam_portfoy_tl"] = toplam_portfoy
         self.durum["zirve_portfoy_tl"] = zirve
-        self.durum["mevcut_cekilme_pct"] = cur_dd
+        self.durum["mevcut_cekilme_pct"] = cekilme
         
-        # Kill-Switch Eşik Kontrolü (%4.50 çekilme aşılırsa kilitlenir, düzeldiğinde açılır)
-        if cur_dd >= 4.50:
-            if not self.durum.get("kill_switch_aktif", False):
-                self.durum["kill_switch_aktif"] = True
-                self.durum["kill_switch_nedeni"] = f"Portföy çekilmesi (%{cur_dd:.2f}) izin verilen %4.50 eşiğini aştı!"
-                print(f"[KILL-SWITCH TETİKLENDİ] {self.durum['kill_switch_nedeni']}")
-        else:
-            self.durum["kill_switch_aktif"] = False
-            self.durum["kill_switch_nedeni"] = None
+        # Risk Freni / Kill-Switch Kontrolü (%8 Çekilme Eşiği)
+        if cekilme >= 8.0 and not self.durum.get("kill_switch_aktif", False):
+            self.durum["kill_switch_aktif"] = True
+            self.durum["kill_switch_nedeni"] = f"Maksimum çekilme limiti aşıldı (%{cekilme} >= %8.0)"
+            print(f"[KILL-SWITCH AKTİF]: {self.durum['kill_switch_nedeni']}")
 
-            
         self._durum_kaydet()
         return self.durum
 
-    def portfoyu_sifirla(self, baslangic_tl: float = 100_000.0, baslangic_fon: str = "PPZ"):
+    def portfoy_baslat(self, baslangic_tl: float = 100_000.0, baslangic_fon: str = "PPZ"):
         """
-        Yeni bir canlı yatırım için portföyü sıfırdan kurar.
+        Portföyü verilen sermaye ve fon ile sıfırlar / yeniden başlatır.
         """
-        fiyat = self.son_fon_fiyati_getir(baslangic_fon)
+        f_res = self.son_fon_fiyati_getir(baslangic_fon)
+        fiyat = f_res[0] if isinstance(f_res, (tuple, list)) else f_res
         pay_adedi = round(baslangic_tl / (fiyat if fiyat > 0 else 1.0), 4)
         
         self.durum = {
