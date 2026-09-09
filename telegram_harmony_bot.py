@@ -743,10 +743,15 @@ def menu_harmony(message):
             f"📍 <b>Mevcut Konumunuz:</b> <b>{eldeki_fon}</b>\n"
         )
         
-        if eldeki_fon == "SOS":
-            msg += f"🎯 <b>Tavsiye:</b> <b>SOS POZİSYONUNU KORU</b> (Trend Güçlü)\n"
+        lider = radar.get("lider_fon", "DGF")
+        if "DGF" in eldeki_dict and "SOS" in eldeki_dict:
+            msg += f"🎯 <b>Tavsiye:</b> <b>SOS ve DGF Birlikte Taşınıyor</b> (Podyumun ilk 2 lideri portföyde)\n"
+        elif eldeki_fon == lider:
+            msg += f"🎯 <b>Tavsiye:</b> <b>{eldeki_fon} POZİSYONUNU KORU</b> (Zirve Lideri Pozisyonundasınız)\n"
+        elif eldeki_fon == "SOS":
+            msg += f"🎯 <b>Tavsiye:</b> <b>SOS Pozisyonunu Koru</b> (Trend Güçlü, DGF Alımıyla Dengeleniyor)\n"
         elif eldeki_fon == "PPZ":
-            msg += f"🎯 <b>Tavsiye:</b> <b>1. Lider {radar['lider_fon']} Fonuna Giriş Yapılabilir</b>\n"
+            msg += f"🎯 <b>Tavsiye:</b> <b>Lider {lider} Fonuna Giriş Yapılabilir</b>\n"
         else:
             msg += f"🎯 <b>Tavsiye:</b> Pozisyonu koruyun, rotasyon barajı takip ediliyor.\n"
             
@@ -757,14 +762,26 @@ def menu_harmony(message):
         msg += f"<code>─────────────────────────────────────────</code>\n"
         
         for i, item in enumerate(radar["top10"][:7], 1):
-            etiket = "🟢 SİZDEKİ" if item["fon"] == eldeki_fon else ("⭐ 1. LİDER" if i == 1 else "")
+            etiket = "🟢 SİZDEKİ" if item["fon"] in eldeki_dict else ("⭐ 1. LİDER" if item["fon"] == lider else "")
             vol_s = f"Vol: %{item.get('vol_pct', 20.0):.0f}"
-            tahs_s = f"Tahsis: %{item.get('rec_w', 100.0):.0f}"
             msg += (
                 f"<b>{i}. {item['fon']}</b> | Puan: <code>{item['skor']:.3f}</code> "
-                f"| 20G: <b>%{item['r20']:+.1f}</b> | {vol_s} ({tahs_s}) {etiket}\n"
+                f"| 20G: <b>%{item['r20']:+.1f}</b> | {vol_s} {etiket}\n"
             )
         msg += f"<code>─────────────────────────────────────────</code>\n"
+        
+        try:
+            sys.path.insert(0, BASE_DIR)
+            from makro_veri_motoru import get_canli_makro_gostergeler
+            makro = get_canli_makro_gostergeler()
+            msg += (
+                f"🌐 <b>CANLI PİYASA BENCHMARK:</b>\n"
+                f"• USD/TRY: <code>{makro['usd_try']} TL</code> | BIST 100: <code>{makro['bist_100']:,.0f}</code> | Rf (Faiz): <code>%{makro['rf_yillik_pct']}</code>\n"
+                f"🔍 <i>[{makro['kaynak']} | {makro['zaman']}]</i>\n"
+            )
+        except Exception:
+            pass
+            
         msg += f"<i>(Detaylı TEFAS verisi için aşağıdaki butonlara basabilir veya fon kodunu yazabilirsiniz)</i>"
 
         
