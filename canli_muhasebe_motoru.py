@@ -141,13 +141,21 @@ class CanliMuhasebeMotoru:
         tepe noktasını ve güncel drawdown'u hesaplar.
         """
         toplam_aktif_fon = 0.0
+        bayat_fonlar = []
         for f_kod, f_bilgi in self.durum.get("eldeki_fonlar", {}).items():
-            f_res = self.son_fon_fiyati_getir(f_kod)
-            canli_fiyat = f_res[0] if isinstance(f_res, (tuple, list)) else f_res
+            f_res = self.son_fon_fiyati_getir(f_kod, detayli=True)
+            if isinstance(f_res, (tuple, list)):
+                canli_fiyat, canli_mi = f_res[0], f_res[1]
+            else:
+                canli_fiyat, canli_mi = f_res, True
+
             if canli_fiyat > 0.0:
                 f_bilgi["son_nav"] = canli_fiyat
+                if not canli_mi:
+                    bayat_fonlar.append(f_kod)
             else:
                 # TEFAS sabah veri güncellemesindeyse veya API anlık kesildiyse portföyü sıfırlama, son bilinen fiyatı koru!
+                bayat_fonlar.append(f_kod)
                 canli_fiyat = f_bilgi.get("son_nav", 0.0)
                 if canli_fiyat <= 0.0:
                     canli_fiyat = f_bilgi.get("maliyet_fiyati", 1.0)
@@ -156,19 +164,32 @@ class CanliMuhasebeMotoru:
             f_bilgi["guncel_deger_tl"] = round(f_bilgi["pay_adedi"] * canli_fiyat, 2)
             toplam_aktif_fon += f_bilgi["guncel_deger_tl"]
 
-        toplam_portfoy = round(toplam_aktif_fon + self.durum.get("serbest_nakit_tl", 0.0), 2)
+        if bayat_fonlar:
+            print(f"[UYARI] Şu fonlar için canlı TEFAS fiyatı alınamadı, son bilinen fiyat kullanıldı: "
+                  f"{', '.join(bayat_fonlar)}. Kill-switch/drawdown hesabı bu süre boyunca güncel olmayabilir.")
+
+        # Takasta bekleyen fon satış/alış tutarları ve serbest nakit
+        toplam_takas = sum(t.get("tutar_tl", 0.0) for t in self.durum.get("takasta_bekleyen_islemler", []))
+        serbest_nakit = self.durum.get("serbest_nakit_tl", 0.0)
+        toplam_portfoy = round(toplam_aktif_fon + toplam_takas + serbest_nakit, 2)
+        
         zirve = max(self.durum.get("zirve_portfoy_tl", toplam_portfoy), toplam_portfoy)
         cekilme = round(((zirve - toplam_portfoy) / zirve) * 100.0, 2) if zirve > 0 else 0.0
 
         self.durum["toplam_portfoy_tl"] = toplam_portfoy
         self.durum["zirve_portfoy_tl"] = zirve
         self.durum["mevcut_cekilme_pct"] = cekilme
+        self.durum["fiyat_verisi_bayat_fonlar"] = bayat_fonlar
         
-        # Risk Freni / Kill-Switch Kontrolü (%8 Çekilme Eşiği)
-        if cekilme >= 8.0 and not self.durum.get("kill_switch_aktif", False):
-            self.durum["kill_switch_aktif"] = True
-            self.durum["kill_switch_nedeni"] = f"Maksimum çekilme limiti aşıldı (%{cekilme} >= %8.0)"
-            print(f"[KILL-SWITCH AKTİF]: {self.durum['kill_switch_nedeni']}")
+        # Risk Freni / Kill-Switch Kontrolü (%4.50 Çekilme Eşiği)
+        if cekilme >= 4.50:
+            if not self.durum.get("kill_switch_aktif", False):
+                self.durum["kill_switch_aktif"] = True
+                self.durum["kill_switch_nedeni"] = f"Portföy çekilmesi (%{cekilme:.2f}) izin verilen %4.50 güvenlik eşiğini aştı!"
+                print(f"[KILL-SWITCH TETİKLENDİ]: {self.durum['kill_switch_nedeni']}")
+        else:
+            self.durum["kill_switch_aktif"] = False
+            self.durum["kill_switch_nedeni"] = None
 
         self._durum_kaydet()
         return self.durum

@@ -1,5 +1,5 @@
 {
-  "son_guncelleme": "2026-09-10 18:42:52",
+  "son_guncelleme": "2026-09-10 19:17:08",
   "baslangic_sermayesi_tl": 64492.47,
   "toplam_portfoy_tl": 63515.12,
   "zirve_portfoy_tl": 64492.47,
@@ -25,5 +25,6 @@
     }
   },
   "serbest_nakit_tl": 0.0,
-  "takasta_bekleyen_islemler": []
+  "takasta_bekleyen_islemler": [],
+  "fiyat_verisi_bayat_fonlar": []
 }
