@@ -1,9 +1,9 @@
 {
-  "son_guncelleme": "2026-09-10 00:29:15",
-  "baslangic_sermayesi_tl": 46494.2,
-  "toplam_portfoy_tl": 45404.63,
-  "zirve_portfoy_tl": 46494.2,
-  "mevcut_cekilme_pct": 2.34,
+  "son_guncelleme": "2026-09-10 18:42:52",
+  "baslangic_sermayesi_tl": 64492.47,
+  "toplam_portfoy_tl": 63515.12,
+  "zirve_portfoy_tl": 64492.47,
+  "mevcut_cekilme_pct": 1.52,
   "kill_switch_aktif": false,
   "kill_switch_nedeni": null,
   "eldeki_fonlar": {
@@ -12,16 +12,16 @@
       "fon_adi": "Hedef Portföy Sağlık Sektörü Değişken Fon",
       "pay_adedi": 22943.0,
       "maliyet_fiyati": 1.7214488,
-      "son_nav": 1.678021,
-      "guncel_deger_tl": 38498.84
+      "son_nav": 1.678846,
+      "guncel_deger_tl": 38517.76
     },
-    "MTD": {
-      "fon_kodu": "MTD",
-      "fon_adi": "Mükafat Portföy Birinci Serbest Fon",
-      "pay_adedi": 5095.0,
-      "maliyet_fiyati": 1.3737,
-      "son_nav": 1.355405,
-      "guncel_deger_tl": 6905.79
+    "DGF": {
+      "fon_kodu": "DGF",
+      "fon_adi": "A1 Portföy Birinci Değişken Fon",
+      "pay_adedi": 16339.0,
+      "maliyet_fiyati": 1.52992,
+      "son_nav": 1.52992,
+      "guncel_deger_tl": 24997.36
     }
   },
   "serbest_nakit_tl": 0.0,
