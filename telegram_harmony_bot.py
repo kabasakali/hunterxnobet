@@ -155,6 +155,9 @@ def tum_fonlarin_detaylarini_topla():
                     res = r.json().get("resultList", [])
                     if res:
                         data = res[0]
+                        # TEFAS akşam takas/sıfır fiyat filtrelemesi (Geçici glitch engeli)
+                        if data.get("sonFiyat", 0) <= 0.0001 or (data.get("gunlukGetiri") is not None and data.get("gunlukGetiri") <= -30.0):
+                            return f, None
                         vd, av, sv = get_varlik_dagilimi_ve_valor(f)
                         data["varlik_dagilimi"] = dict(vd)
                         data["alisValor"] = av
@@ -561,7 +564,14 @@ def piyasa_isisi_metni_olustur() -> str:
             continue
             
         ret = g.get("gunlukGetiri", 0.0)
+        son_fiyat = g.get("sonFiyat", 1.0)
         unvan = g.get("fonUnvan", fon)
+        
+        # TEFAS Veri Temizleme & Anomali Filtresi:
+        # Fiyatı 0 olan veya anlık TEFAS güncelleme hatasıyla -%30'dan fazla düşen (örneğin -%100 glitch) kayıtları filtrele
+        if ret is None or ret <= -30.0 or ret >= 100.0 or son_fiyat <= 0.0001:
+            continue
+            
         tum_getiriler.append(ret)
         if ret > 0:
             kazananlar.append((fon, ret, unvan))
