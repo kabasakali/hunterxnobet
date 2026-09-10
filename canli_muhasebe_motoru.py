@@ -63,7 +63,7 @@ class CanliMuhasebeMotoru:
             import requests
             url = "https://www.tefas.gov.tr/api/funds/fonBilgiGetir"
             headers = {"User-Agent": "Mozilla/5.0", "Referer": "https://www.tefas.gov.tr/"}
-            r = requests.post(url, json={"fonKodu": fon_kodu.upper(), "dil": "TR"}, headers=headers, timeout=4)
+            r = requests.post(url, json={"fonKodu": fon_kodu.upper(), "dil": "TR"}, headers=headers, timeout=8)
             if r.status_code == 200:
                 res = r.json().get("resultList", [])
                 if res and "sonFiyat" in res[0]:
@@ -150,9 +150,15 @@ class CanliMuhasebeMotoru:
                 canli_fiyat, canli_mi = f_res, True
 
             if canli_fiyat > 0.0:
-                f_bilgi["son_nav"] = canli_fiyat
-                if not canli_mi:
+                if canli_mi:
+                    f_bilgi["son_nav"] = canli_fiyat
+                else:
                     bayat_fonlar.append(f_kod)
+                    # Canlı veri başarısızsa ve elde zaten güncel bir son_nav varsa, dünkü pivot fiyatıyla ezme!
+                    if f_bilgi.get("son_nav", 0.0) > 0:
+                        canli_fiyat = f_bilgi["son_nav"]
+                    else:
+                        f_bilgi["son_nav"] = canli_fiyat
             else:
                 # TEFAS sabah veri güncellemesindeyse veya API anlık kesildiyse portföyü sıfırlama, son bilinen fiyatı koru!
                 bayat_fonlar.append(f_kod)

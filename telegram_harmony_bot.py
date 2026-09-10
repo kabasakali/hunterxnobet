@@ -1498,7 +1498,12 @@ def arka_plan_zamanlayici():
                 eldeki_dict = durum.get("eldeki_fonlar", {})
 
                 
+                bayat_listesi = durum.get("fiyat_verisi_bayat_fonlar", [])
                 for f_kod, f_info in eldeki_dict.items():
+                    if f_kod in bayat_listesi:
+                        # Bayat/fallback veri TEFAS'ın yeni fiyatı değildir; yanlış alarm gönderme!
+                        continue
+
                     yeni_fiyat = f_info.get("son_nav", 0.0)
                     eski_fiyat = son_bilinen_fon_fiyatlari.get(f_kod, 0.0)
                     
